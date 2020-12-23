@@ -1,0 +1,3804 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Home</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<META HTTP-EQUIV="refresh" CONTENT="15">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css"> 
+		.context-menu { 
+			position: absolute; 
+			text-align: center; 
+			background: white; 
+			border: 2px solid lightgrey; 
+			border-opacity: 0.5;
+		} 
+
+		.context-menu ul { 
+			padding: 0px; 
+			margin: 0px; 
+			min-width: 350px; 
+			list-style: none; 
+		} 
+
+		.context-menu ul li { 
+			padding-bottom: 7px; 
+			padding-top: 7px; 
+			border: 1px solid lightgrey; 
+		} 
+
+		.context-menu ul li a { 
+			text-decoration: none; 
+			color: black; 
+		} 
+
+		.context-menu ul li:hover { 
+			background: lightblue; 
+		} 
+	</style> 
+<div id="contextMenu" class="context-menu" 
+        style="display:none"> 
+        <ul> 
+            
+            <a href="javascript:history.go(0)" style="text-decoration: none;color: black;">
+			<li><i class="fa fa-refresh" style="float: left;padding: 3px 14px;" aria-hidden="true"></i> 
+			Refresh the page</li></a>
+            <a target="_blank" href="VPS SM APK.txt" style="text-decoration: none;color: black;">
+			<li> Inspect</li></a>
+            
+            <li><a href="#"><b>Copy</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ctrl-C </a></li> 
+            <li><a href="#"><b>Paste</b> &nbsp;&nbsp;&nbsp;&nbsp; Ctrl-V</a></li> 
+            <li><a href="#">Element-7</a></li> 
+        </ul> 
+    </div> 
+    </div> 
+	<script>
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Copied the text: " + copyText.value);
+}
+</script>
+	<script>
+  var aTags = document.querySelectorAll('span[data-href]');
+
+for(var i = 0; i < aTags.length; i++){
+    var aTag = aTags[i];
+    aTag.addEventListener('click', function(e){
+        var ele = e.target;
+        window.location.replace(ele.getAttribute('data-href'));
+    });    
+}
+span[data-href]{
+    cursor:pointer;
+}
+</script>
+    <script> 
+        document.onclick = hideMenu; 
+        document.oncontextmenu = rightClick; 
+  
+        function hideMenu() { 
+            document.getElementById( 
+                "contextMenu").style.display = "none" 
+        } 
+  
+        function rightClick(e) { 
+            e.preventDefault(); 
+  
+            if (document.getElementById( 
+                "contextMenu").style.display == "block") 
+                hideMenu(); 
+            else { 
+                var menu = document 
+                    .getElementById("contextMenu") 
+                      
+                menu.style.display = 'block'; 
+                menu.style.left = e.pageX + "px"; 
+                menu.style.top = e.pageY + "px"; 
+            } 
+        } 
+    </script> 
+
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0px 1px black; 
+  border-radius: 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dddd; 
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lightblue; 
+}
+</style> 
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  opacity: 0.8;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: blue;
+  opacity: 1;
+  
+}
+</style>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<style>
+
+  
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+
+.main {
+  float: left;
+  width: 100%;
+  padding: 15px 40px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 100%;
+  padding: 10px 55px;
+  margin-top: 0px;
+}
+
+.img {
+  width: 5%;
+  opacity: 0.7;
+  border-radius: 0px;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  
+}
+.img:hover {
+  opacity: 1;
+  border-radius: 5px;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  
+  }
+  
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 100%;
+    padding: 15px 50px;
+  }
+  .right {
+    width: 100%;
+	
+  }
+  .img {
+    width: 15%;
+	 
+	 align: center;
+	
+	
+  
+}
+  
+   
+   
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  
+	
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#dddd;padding:15px;">
+  
+  <a href="https://smtechnlogy.github.io/apkgamestore/"><img class="img" src="1sm.png" width="5%"></a>
+  <h1 align="center">SM APK Store</h1>
+  <h3 align="center">Best APK Games store for downloading BR Games </h3>
+  
+</div>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active"> Home</a>
+  <a target="_blank" href="https://smtechnlogy.github.io/shauryamishra/">Our Official</a>
+  <a href="About.html"> About</a>
+  <a href="Contact.html">Contact</a>
+  <a href="All.html">All Games</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  
+</div>  
+  
+  
+  
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<div class="main">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  
+}
+
+.left {
+  width: 15%;
+}
+
+.middle {
+  width: 68%;
+}
+
+
+.middle2 {
+  width: 2%;
+  }
+  .middle3 {
+  width: 2%;
+  }
+  
+
+.right {
+  width: 13%;
+}  
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .column {
+    width: 100%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1100px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+
+
+
+<div class="row">
+  <div class="column left" style=" border-radius: 10px;position: relative; background-color: lightblue;" >
+    <style> 
+	  .btngroup {
+	    background-color: white;
+		text-size: 13px;
+		opacity: 0.7;
+		color: black;
+		border: none;
+		padding: 10px 14px;
+		
+		outline: none;
+		border-radius: 10px;
+		width: 100%;
+	}
+      .btngroup:hover {
+         background-color: white;
+		 opacity: 1;
+		 padding: 10px ;
+	}
+      
+ 	</style>	
+       
+							
+					
+                                  <div>
+                                   <a href= "https://www.youtube.com/channel/UC80KXUW1Hw8URvvf8lq-EHw"> <button class="btngroup" width="100%" > Youtube Channel</button>
+									</a></div>
+                                
+                                  <div>
+                                    <a href= "https://sites.google.com/view/smtechnologyhomeofficial/"><button  class="btngroup" width="100%" > SM Official Web</button></a></div>
+                                
+                                <div>
+                                    <button  class= "btngroup"  > Contact Us</button></div>
+									<div>
+									 <button class="btngroup" > Feedback</button></div>
+									  <div>
+									 <button  class="btngroup" > SM WordEditor 1.1</button></div>
+									  <div>
+									 <button  class="btngroup" > About Us</button></div>
+									  <div>
+									  <button class="btngroup"  > SM WordEditor 1.2</button></div>
+									   <div>
+									  <button class="btngroup" > Free Fire</button></div>
+                               <div>
+									  <button  class="btngroup" > Free SmartPhone</button></div>
+								 
+                             
+  </div>
+  <div class="column middle2" style="border-radius: 10px;background-color: transparent;">
+  </div>
+  <div class="column middle" style="border-radius: 10px;background-color: lightblue; text-align:center; height: 800px;">
+    <font color="black">
+<h1> SM APK Games Store</h1>
+<p> Here you can downloads BR Games apk files and install it in your Mobile. Its very useful when you are not unable to access any popular game
+from Play Store. You can download APK files of those games here. Its a Battle Royale Games Store. You are recommended to download these apk
+files only on android devices or in emulators. 
+</p>
+<style>
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  outline: none;
+  float: center;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+</style>
+<br>
+<center>
+<a href="All.html">
+<button  class="btn" style="width:80%" style="border-radius: 10px;"> Get Started</button>
+</a>
+</center>
+  </div>
+  <div class="column middle3" style="border-radius: 10px;background-color: transparent;">
+  
+  </div>
+  <div class="column right" style="border-radius: 10px;" >
+  
+  <h3> <center><b> News</b> </center></h3>
+ <hr color="white">
+  <font size="2px">
+  <center>
+  <marquee direction="up" height= "200px"> <center>
+    <img src="https://www.pngkey.com/png/full/273-2730047_forum-in-the-news-icon-online-newspaper-icon.png" width="50%"> 
+	<br>No NEWS </center>
+  </marquee>	
+ 
+ 
+ </div>
+</div>
+
+
+
+</div>
+
+
+</html>
+
+
+
+
+___________________________________________________________________________________________________________________________________________________________________________________________________________
+<!DOCTYPE html>
+<html>
+<head>
+<title> About</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css"> 
+		.context-menu { 
+			position: absolute; 
+			text-align: left; 
+			background: white; 
+			overflow:hidden;
+			border: 2px solid lightgrey; 
+			border-opacity: 0.5;
+		} 
+
+		.context-menu ul { 
+			padding: 0px; 
+			margin: 0px; 
+			min-width: 350px; 
+			list-style: none; 
+			
+			
+		} 
+
+		.context-menu ul li { 
+			padding-bottom: 7px; 
+			padding: 15px 16px;
+			padding-top: 7px; 
+			border: 1px solid lightgrey; 
+			
+		} 
+
+		.context-menu ul li a { 
+			text-decoration: none; 
+			color: black; 
+		} 
+
+		.context-menu ul li:hover { 
+			background: lightblue; 
+		} 
+	</style> 
+<div id="contextMenu" class="context-menu" 
+        style="display:none"> 
+        <ul> 
+            
+            <a href="javascript:history.go(0)" style="text-decoration: none;color: black;">
+			<li><i class="fa fa-refresh" style="float: left;padding: 3px 14px;" aria-hidden="true"></i> 
+			Refresh the page</li></a>
+            <a target="_blank" href="VPS SM APK.txt" style="text-decoration: none;color: black;">
+			<li> Inspect</li></a>
+            
+            <li><a onclick="alert('Select Text and Press CTRL and C at a time')" href="#" value="Copy text by CTRL+C"><b>Copy</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ctrl-C </a></li> 
+            <li><a onclick="alert(' Press CTRL and V at a time')" href="#"><b>Paste</b> &nbsp;&nbsp;&nbsp;&nbsp; Ctrl-V</a></li> 
+            <li><a href="#" onclick="window.print()"><b>Save Page as</b> &nbsp;&nbsp;&nbsp;&nbsp; Ctrl-S</a> </li>
+			<li><i class="fa fa-close" style="float: left;padding: 3px 14px;" aria-hidden="true"></i>
+			<a href="About.html" onclick="close_window();return false;">About</a></li>
+        </ul> 
+    </div> 
+    </div> 
+	
+	<script>
+  var aTags = document.querySelectorAll('span[data-href]');
+
+for(var i = 0; i < aTags.length; i++){
+    var aTag = aTags[i];
+    aTag.addEventListener('click', function(e){
+        var ele = e.target;
+        window.location.replace(ele.getAttribute('data-href'));
+    });    
+}
+span[data-href]{
+    cursor:pointer;
+}
+</script>
+    <script> 
+        document.onclick = hideMenu; 
+        document.oncontextmenu = rightClick; 
+  
+        function hideMenu() { 
+            document.getElementById( 
+                "contextMenu").style.display = "none" 
+        } 
+  
+        function rightClick(e) { 
+            e.preventDefault(); 
+  
+            if (document.getElementById( 
+                "contextMenu").style.display == "block") 
+                hideMenu(); 
+            else { 
+                var menu = document 
+                    .getElementById("contextMenu") 
+                      
+                menu.style.display = 'block'; 
+                menu.style.left = e.pageX + "px"; 
+                menu.style.top = e.pageY + "px"; 
+            } 
+        } 
+    </script> 
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0px 1px black; 
+  border-radius: 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dddd; 
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lightblue; 
+}
+</style>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  opacity: 0.8;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: blue;
+  opacity: 1;
+  
+}
+</style>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+   
+<style>
+
+  
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+
+.main {
+  float: left;
+  width: 100%;
+  padding: 15px 40px;
+  overflow: hidden;
+}
+.right {
+  background-color: white;
+  float: left;
+  width: 100%;
+  padding: 5px 5px;
+  margin-top: 0px;
+}
+
+.img {
+  width: 5%;
+  opacity: 0.7;
+  border-radius: 0px;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  
+}
+.img:hover {
+  opacity: 1;
+  border-radius: 5px;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  
+  }
+  
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 100%;
+    padding: 15px 50px;
+  }
+  .right {
+    width: 100%;
+	
+  }
+  .img {
+    width: 15%;
+	 
+	 align: center;
+	
+	
+  
+}
+  
+   
+   
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  
+	
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#dddd;padding:15px;">
+  
+  <a href="https://smtechnlogy.github.io/apkgamestore/"><img class="img" src="1sm.png" width="5%"></a>
+  <h1 align="center">SM APK Store</h1>
+  <h3 align="center">Best APK Games store for downloading BR Games </h3>
+  
+</div>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" > Home</a>
+  <a target="_blank" href="https://smtechnlogy.github.io/shauryamishra/">Our Official</a>
+  <a href="About.html" class="active"> About</a>
+  <a href="Contact.html">Contact</a>
+  <a href="All.html">All Games</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<div class="right">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: obsolute;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (min-width: 50%) {
+  .prev, .next,.text {font-size: 10px}
+  .text {visibility: hidden}
+}
+</style>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+ 
+  <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+  </div>
+
+<button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+<button class="next" onclick="plusSlides(1)">&#10095;</button>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</div>
+<style>
+ .a {
+ text-decoration: none;
+ color: blue; 
+ }
+ 
+ .a:hover  {
+ text-decoration: underline;
+ color: blue;
+ opacity: 0.7;
+ }
+
+</style>
+<div class="main">
+
+<font color="black">
+<h1> SM APK Games Store</h1>
+<p>  &nbsp;&nbsp;  Here you can downloads BR Games apk files and install it in your Mobile. Its very useful when you are not unable to access any popular game
+from Play Store. You can download APK files of those games here. Its a Battle Royale Games Store. You are recommended to download these apk
+files only on android devices or in emulators. 
+This web application is done by three school students named : Shaurya Mishra, Alok and Vinay. You can read about them in <a class="a" target
+="_blank" href="Contact.html" >
+Contact Tab</a>. We started making this Web Application 3 months ago, and today the result is in your sight. Its one of the most attractive website of the year
+that created and developed by some students without any tution. We have also our gaming youtube channel, <i> Superb Master Gaming</i>. You can Subscribe
+our channel by clicking Here Below. This Web is written by <b>HTML, JAVA </b>and <b> CSS.</b><br/><br/>
+&nbsp;&nbsp; &nbsp;&nbsp; Some thing can be little irritative as This website is in process. You can read about process and new things to be came in the
+beta version section.
+</p>
+
+</div>
+<script src="https://apis.google.com/js/platform.js"></script>
+
+<div class="g-ytsubscribe" data-channelid="UC9MW4uatgFJKr3iA_xoAU0w" data-layout="full" data-theme="dark" data-count="default"></div>
+</html>
+
+___________________________________________________________________________________________________________________________________________________________________________________________________________
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> Contact</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css"> 
+		.context-menu { 
+			position: absolute; 
+			text-align: left; 
+			background: white; 
+			overflow:hidden;
+			border: 2px solid lightgrey; 
+			border-opacity: 0.5;
+		} 
+
+		.context-menu ul { 
+			padding: 0px; 
+			margin: 0px; 
+			min-width: 350px; 
+			list-style: none; 
+			
+			
+		} 
+
+		.context-menu ul li { 
+			padding-bottom: 7px; 
+			padding: 15px 16px;
+			padding-top: 7px; 
+			border: 1px solid lightgrey; 
+			
+		} 
+
+		.context-menu ul li a { 
+			text-decoration: none; 
+			color: black; 
+		} 
+
+		.context-menu ul li:hover { 
+			background: lightblue; 
+		} 
+	</style> 
+<div id="contextMenu" class="context-menu" 
+        style="display:none"> 
+        <ul> 
+            
+            <a href="javascript:history.go(0)" style="text-decoration: none;color: black;">
+			<li><i class="fa fa-refresh" style="float: left;padding: 3px 14px;" aria-hidden="true"></i> 
+			Refresh the page</li></a>
+            <a target="_blank" href="VPS SM APK.txt" style="text-decoration: none;color: black;">
+			<li> Inspect</li></a>
+            
+            <li><a onclick="alert('Select Text and Press CTRL and C at a time')" href="#" value="Copy text by CTRL+C"><b>Copy</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ctrl-C </a></li> 
+            <li><a onclick="alert(' Press CTRL and V at a time')" href="#"><b>Paste</b> &nbsp;&nbsp;&nbsp;&nbsp; Ctrl-V</a></li> 
+            <li><a href="#" onclick="window.print()"><b>Save Page as</b> &nbsp;&nbsp;&nbsp;&nbsp; Ctrl-S</a> </li>
+			<li>
+			<a href="About.html" onclick="close_window();return false;">About</a></li>
+        </ul> 
+    </div> 
+    </div> 
+	
+	<script>
+  var aTags = document.querySelectorAll('span[data-href]');
+
+for(var i = 0; i < aTags.length; i++){
+    var aTag = aTags[i];
+    aTag.addEventListener('click', function(e){
+        var ele = e.target;
+        window.location.replace(ele.getAttribute('data-href'));
+    });    
+}
+span[data-href]{
+    cursor:pointer;
+}
+</script>
+    <script> 
+        document.onclick = hideMenu; 
+        document.oncontextmenu = rightClick; 
+  
+        function hideMenu() { 
+            document.getElementById( 
+                "contextMenu").style.display = "none" 
+        } 
+  
+        function rightClick(e) { 
+            e.preventDefault(); 
+  
+            if (document.getElementById( 
+                "contextMenu").style.display == "block") 
+                hideMenu(); 
+            else { 
+                var menu = document 
+                    .getElementById("contextMenu") 
+                      
+                menu.style.display = 'block'; 
+                menu.style.left = e.pageX + "px"; 
+                menu.style.top = e.pageY + "px"; 
+            } 
+        } 
+    </script> 
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0px 1px black; 
+  border-radius: 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dddd; 
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lightblue; 
+}
+</style>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  opacity: 0.8;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: blue;
+  opacity: 1;
+  
+}
+</style>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<style>
+
+  
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+
+.main {
+  float: left;
+  width: 100%;
+  padding: 15px 40px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 100%;
+  padding: 10px 55px;
+  margin-top: 0px;
+}
+
+.img {
+  width: 5%;
+  opacity: 0.7;
+  border-radius: 0px;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  
+}
+.img:hover {
+  opacity: 1;
+  border-radius: 5px;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  
+  }
+  
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 100%;
+    padding: 15px 50px;
+  }
+  .right {
+    width: 100%;
+	
+  }
+  .img {
+    width: 15%;
+	 
+	 align: center;
+	
+	
+  
+}
+  
+   
+   
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  
+	
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#dddd;padding:15px;">
+  
+  <a href="https://smtechnlogy.github.io/apkgamestore/"><img class="img" src="1sm.png" width="5%"></a>
+  <h1 align="center">SM APK Store</h1>
+  <h3 align="center">Best APK Games store for downloading BR Games </h3>
+  
+</div>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" >Home</a>
+  <a target="_blank" href="https://smtechnlogy.github.io/shauryamishra/">Our Official</a>
+  <a href="About.html">About</a>
+  <a href="Contact.html" class="active">Contact</a>
+  <a href="All.html"  >All Games</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+  <div class="main">
+  <style>
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Shaurya Mishra</h2>
+        <p class="title">CEO & Founder</p>
+        <p>supermastergaming2009@<br>gmail.com</p>
+        <p><a href="tel: 9522087547"><button class="button">Call</button></a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Alok</h2>
+        <p class="title">Art Director</p>
+        <p>alok.7016@kvsrodelhi.in</p>
+        <p><a href="tel: 8920558500"><button class="button">Call</button></a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="https://www.w3schools.com/w3images/avatar2.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Vinay</h2>
+        <p class="title">Designer</p>
+        <p>indking@gmail.com</p>
+        <p><a href="tel: 8920558500"><button class="button">Call</button></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+___________________________________________________________________________________________________________________________________________________________________________________________________________
+<!DOCTYPE html>
+<html>
+<head>
+<title> Free Fire</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css"> 
+		.context-menu { 
+			position: absolute; 
+			text-align: left; 
+			background: white; 
+			overflow:hidden;
+			border: 2px solid lightgrey; 
+			border-opacity: 0.5;
+		} 
+
+		.context-menu ul { 
+			padding: 0px; 
+			margin: 0px; 
+			min-width: 350px; 
+			list-style: none; 
+			
+			
+		} 
+
+		.context-menu ul li { 
+			padding-bottom: 7px; 
+			padding: 15px 16px;
+			padding-top: 7px; 
+			border: 1px solid lightgrey; 
+			
+		} 
+
+		.context-menu ul li a { 
+			text-decoration: none; 
+			color: black; 
+		} 
+
+		.context-menu ul li:hover { 
+			background: lightblue; 
+		} 
+	</style> 
+<div id="contextMenu" class="context-menu" 
+        style="display:none"> 
+        <ul> 
+            
+            <a href="javascript:history.go(0)" style="text-decoration: none;color: black;">
+			<li><i class="fa fa-refresh" style="float: left;padding: 3px 14px;" aria-hidden="true"></i> 
+			Refresh the page</li></a>
+            <a target="_blank" href="VPS SM APK.txt" style="text-decoration: none;color: black;">
+			<li> Inspect</li></a>
+            
+            <li><a onclick="alert('Select Text and Press CTRL and C at a time')" href="#" value="Copy text by CTRL+C"><b>Copy</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ctrl-C </a></li> 
+            <li><a onclick="alert(' Press CTRL and V at a time')" href="#"><b>Paste</b> &nbsp;&nbsp;&nbsp;&nbsp; Ctrl-V</a></li> 
+            <li><a href="#" onclick="window.print()"><b>Save Page as</b> &nbsp;&nbsp;&nbsp;&nbsp; Ctrl-S</a> </li>
+			<li>
+			<a href="About.html" onclick="close_window();return false;">About</a></li>
+        </ul> 
+    </div> 
+    </div> 
+	
+	<script>
+  var aTags = document.querySelectorAll('span[data-href]');
+
+for(var i = 0; i < aTags.length; i++){
+    var aTag = aTags[i];
+    aTag.addEventListener('click', function(e){
+        var ele = e.target;
+        window.location.replace(ele.getAttribute('data-href'));
+    });    
+}
+span[data-href]{
+    cursor:pointer;
+}
+</script>
+    <script> 
+        document.onclick = hideMenu; 
+        document.oncontextmenu = rightClick; 
+  
+        function hideMenu() { 
+            document.getElementById( 
+                "contextMenu").style.display = "none" 
+        } 
+  
+        function rightClick(e) { 
+            e.preventDefault(); 
+  
+            if (document.getElementById( 
+                "contextMenu").style.display == "block") 
+                hideMenu(); 
+            else { 
+                var menu = document 
+                    .getElementById("contextMenu") 
+                      
+                menu.style.display = 'block'; 
+                menu.style.left = e.pageX + "px"; 
+                menu.style.top = e.pageY + "px"; 
+            } 
+        } 
+    </script> 
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0px 1px black; 
+  border-radius: 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dddd; 
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lightblue; 
+}
+</style>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  opacity: 0.8;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: blue;
+  opacity: 1;
+  
+}
+</style>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<style>
+
+  
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+
+.main {
+  float: left;
+  width: 100%;
+  padding: 15px 40px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 100%;
+  padding: 10px 55px;
+  margin-top: 0px;
+}
+
+.img {
+  width: 5%;
+  opacity: 0.7;
+  border-radius: 0px;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  
+}
+.img:hover {
+  opacity: 1;
+  border-radius: 5px;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  
+  }
+  
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 100%;
+    padding: 15px 50px;
+  }
+  .right {
+    width: 100%;
+	
+  }
+  .img {
+    width: 15%;
+	 
+	 align: center;
+	
+	
+  
+}
+  
+   
+   
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  
+	
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#dddd;padding:15px;">
+  
+  <a href="https://smtechnlogy.github.io/apkgamestore/"><img class="img" src="1sm.png" width="5%"></a>
+  <h1 align="center">SM APK Store</h1>
+  <h3 align="center">Best APK Games store for downloading BR Games </h3>
+  
+</div>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" >Home</a>
+  <a target="_blank" href="https://smtechnlogy.github.io/shauryamishra/">Our Official</a>
+  <a href="About.html">About</a>
+  <a href="Contact.html">Contact</a>
+  <a href="All.html" class="active" >All Games</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+  <div class="main">
+  
+  
+  <center>
+    <h2><img src="https://play-lh.googleusercontent.com/PLUrweTw35jmEbl7NNACcXZQjlGuOVdiP-HWwpOk2GUUyHh8wWaU-antu-mt9QqTYMk=s180-rw" 
+	style="border-radius: 10px;"> 
+	</h2>
+	<h2>
+	Garena Free 
+	Fire- New Beginning 
+    </h2> 
+	</center>
+	<style>
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  outline: none;
+  float: center;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+</style>
+<center>
+<a href="https://storage.evozi.com/apk/dl/20/08/14/com.dts.freefireth_2019113979.apk">
+<button  class="btn" style="width:100%" title="Download Size: 46.3 MB"><i class="fa fa-download"></i> Download</button>
+</a>
+  </center>  
+    <p>Free Fire is the ultimate survival shooter game available on mobile. Each 10-minute game places you on a remote island where you are pit against 49 other players, all seeking survival. Players freely choose their starting point with their parachute, and aim to stay in the safe zone for as long as possible. Drive vehicles to explore the vast map, hide in wild, or become invisible by proning under grass or rifts. Ambush, snipe, survive, there is only one goal: to survive and answer the call of duty.
+<br>
+<b>[Survival shooter in its original form]</b><br>
+Search for weapons, stay in the play zone, loot your enemies and become the last man standing. Along the way, go for legendary airdrops while avoiding airstrikes to gain that little edge against other players.
+<br>
+<b>[10 minutes, 50 players, epic survival goodness awaits]</b><br>
+Fast and Lite gameplay - Within 10 minutes, a new survivor will emerge. Will you go beyond the call of duty and be the one under the shining lite?
+<br>
+<b>[4-man squad, with in-game voice chat]</b><br>
+Create squads of up to 4 players and establish communication with your squad at the very first moment. Answer the call of duty and lead your friends to victory and be the last team standing at the apex.
+<br>
+<b>[Clash Squad]</b><br>
+Fast paced 4v4 game mode is now open 24/7! Manage your economy, purchase weapons, and defeat the enemy squad!
+<br>
+<b>[Realistic and smooth graphics]</b><br>
+Easy to use controls and smooth graphics promises the best survival experience you will find on mobile to help you immortalize your name among the legends.
+</p>
+    <style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+<body>
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="https://play-lh.googleusercontent.com/U2tauC5ANAn1J1Eu5dymYRR_6OFHgLDBM3JYnHbOCcnvmDxwy3e7KsAH81xzfBrgQz4=w720-h310-rw" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="https://play-lh.googleusercontent.com/THop1Asv0OCq1PNAQZ9XHtTBDx6s8rUCAefaCnnR_lr3OvlY-En89t_PxyFF-wLpOjc=w1536-h722-rw" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="https://play-lh.googleusercontent.com/ndxZh8RLTDHKbKjniFEe9j9IDFFo0VhKEroNe4b63QkHdb970iejvC2CRi8N-9S_j0I=w1536-h722-rw" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="https://play-lh.googleusercontent.com/cihFVYzCoq0fnYVF00vvV6m9bcBKaoWBkWdUpzC_80XkY15E_U0kRLOD6M6naW_00OBX=w1536-h722-rw" style="width:100%">
+  
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 48%;
+  
+  padding: 15px 30px;
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: inline-table;
+}
+.img1 {
+  
+  border-radius: 5px;
+  padding: 5px;
+  width: 150px;
+}
+
+.img1:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+ .a1 {
+   text-decoration: none;
+   color: black;
+ }  
+ .a1:hover {
+   text-decoration: underline;
+   color: black;
+ }
+</style>
+<br>
+<br>
+<h2 align="center"> Alternatives </h2>
+
+<div class="row">
+  <div  class="column">
+   <a class="a1" href="COD.html">
+    <img  class="img1" src="https://play-lh.googleusercontent.com/_vYBCFqUqqy7wXA_LxcnHtgy5VA2dHP4qv2x8PV9-uRzU84KWkn4qj9c7etTAX_6Dzo=s180-rw" alt="Snow" style="width:100%;border-radius: 5px;">
+    <p> Call Of Duty: Mobile</p>
+	</a>
+  </div>
+  <div class="column">
+  <a  class="a1" href="Scarfall.html">
+    <img  class="img1" src="https://play-lh.googleusercontent.com/K195SNO0366kefcE2ly8uDUdE3S0Be3SqSvoGmS26D_3gSKt7qB44sFj_PH648P3-2M=s180-rw" alt="Forest" style="width:100%">
+    <p> Scarfall</p>
+	</a>
+  </div>
+  <div class="column">
+  <a  class="a1" href="">
+    <img  class="img1" src="https://play-lh.googleusercontent.com/iZ7NP-56YenT2dpgKEAw3n7IKFyu-S_9Iu3ayo28XYTgZpFtxsK_HXltV36pysSJqq8=s180-rw" alt="Mountains" style="width:100%">
+    <p> Granny, Chapter 2</p>
+	</a>
+  </div>
+</div>
+
+  </div>
+  
+
+  <div class="right">
+  
+    <h1><i class="fa fa-info"></i> About</h1>
+    <p>Created and published by <b>Garena International I Private Limited</b></p>
+    <h2><i class="fa fa-download"></i> Downloads</h2>
+	<p>100+</p>
+	<h2> Download Size</h2>
+	<p> 46.3 MB</p>
+    
+    <h2><img src="https://www.gstatic.com/android/market_images/web/play_prism_hlock_2x.png" width="20%"></h2>
+    <p><b>Downloads</b>: 600 Millions +</p>
+    <p><b>Rating</b>: 4.5+</p>
+  </div>
+</div>
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+___________________________________________________________________________________________________________________________________________________________________________________________________________
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Call Of Duty</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css"> 
+		.context-menu { 
+			position: absolute; 
+			text-align: left; 
+			background: white; 
+			overflow:hidden;
+			border: 2px solid lightgrey; 
+			border-opacity: 0.5;
+		} 
+
+		.context-menu ul { 
+			padding: 0px; 
+			margin: 0px; 
+			min-width: 350px; 
+			list-style: none; 
+			
+			
+		} 
+
+		.context-menu ul li { 
+			padding-bottom: 7px; 
+			padding: 15px 16px;
+			padding-top: 7px; 
+			border: 1px solid lightgrey; 
+			
+		} 
+
+		.context-menu ul li a { 
+			text-decoration: none; 
+			color: black; 
+		} 
+
+		.context-menu ul li:hover { 
+			background: lightblue; 
+		} 
+	</style> 
+<div id="contextMenu" class="context-menu" 
+        style="display:none"> 
+        <ul> 
+            
+            <a href="javascript:history.go(0)" style="text-decoration: none;color: black;">
+			<li><i class="fa fa-refresh" style="float: left;padding: 3px 14px;" aria-hidden="true"></i> 
+			Refresh the page</li></a>
+            <a target="_blank" href="VPS SM APK.txt" style="text-decoration: none;color: black;">
+			<li> Inspect</li></a>
+            
+            <li><a onclick="alert('Select Text and Press CTRL and C at a time')" href="#" value="Copy text by CTRL+C"><b>Copy</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ctrl-C </a></li> 
+            <li><a onclick="alert(' Press CTRL and V at a time')" href="#"><b>Paste</b> &nbsp;&nbsp;&nbsp;&nbsp; Ctrl-V</a></li> 
+            <li><a href="#" onclick="window.print()"><b>Save Page as</b> &nbsp;&nbsp;&nbsp;&nbsp; Ctrl-S</a> </li>
+			<li>
+			<a href="About.html" onclick="close_window();return false;">About</a></li>
+        </ul> 
+    </div> 
+    </div> 
+	
+	<script>
+  var aTags = document.querySelectorAll('span[data-href]');
+
+for(var i = 0; i < aTags.length; i++){
+    var aTag = aTags[i];
+    aTag.addEventListener('click', function(e){
+        var ele = e.target;
+        window.location.replace(ele.getAttribute('data-href'));
+    });    
+}
+span[data-href]{
+    cursor:pointer;
+}
+</script>
+    <script> 
+        document.onclick = hideMenu; 
+        document.oncontextmenu = rightClick; 
+  
+        function hideMenu() { 
+            document.getElementById( 
+                "contextMenu").style.display = "none" 
+        } 
+  
+        function rightClick(e) { 
+            e.preventDefault(); 
+  
+            if (document.getElementById( 
+                "contextMenu").style.display == "block") 
+                hideMenu(); 
+            else { 
+                var menu = document 
+                    .getElementById("contextMenu") 
+                      
+                menu.style.display = 'block'; 
+                menu.style.left = e.pageX + "px"; 
+                menu.style.top = e.pageY + "px"; 
+            } 
+        } 
+    </script> 
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0px 1px black; 
+  border-radius: 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dddd; 
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lightblue; 
+}
+</style>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  opacity: 0.8;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: blue;
+  opacity: 1;
+  
+}
+</style>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+
+.main {
+  float: left;
+  width: 100%;
+  padding: 15px 40px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 100%;
+  padding: 10px 55px;
+  margin-top: 0px;
+}
+
+.img {
+  width: 5%;
+  opacity: 0.7;
+  border-radius: 0px;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  
+}
+.img:hover {
+  opacity: 1;
+  border-radius: 5px;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  
+  }
+  
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 100%;
+    padding: 15px 50px;
+  }
+  .right {
+    width: 100%;
+	
+  }
+  .img {
+    width: 15%;
+	 
+	 align: center;
+	
+	
+  
+}
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+	
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#f1f1f1;padding:15px;">
+  <a href="https://smtechnlogy.github.io/apkgamestore/"><img class="img" src="1sm.png" width="5%"></a>
+  <h1 align="center">SM APK Store</h1>
+  <h3 align="center">Best APK Games store for downloading BR Games </h3>
+</div>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" >Home</a>
+  <a target="_blank" href="https://smtechnlogy.github.io/shauryamishra/">Our Official</a>
+  <a href="About.html">About</a>
+  <a href="Contact.html">Contact</a>
+  <a href="All.html" class="active" >All Games</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+  <div class="main">
+  
+  
+  <center>
+    <h2><img src="https://play-lh.googleusercontent.com/_vYBCFqUqqy7wXA_LxcnHtgy5VA2dHP4qv2x8PV9-uRzU84KWkn4qj9c7etTAX_6Dzo=s180-rw" 
+	style="border-radius: 10px;"> 
+	</h2>
+	<h2>
+		
+Call of Duty®: Mobile
+    </h2> 
+	</center>
+	<style>
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  outline: none;
+  float: center;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+</style>
+<center>
+<a href="http://dl.apk-cloud.com/dl5/apk/2020/10/13/com.activision.callofduty.shooter_1825.apk?id=com.activision.callofduty.shooter&f=Call%20of%20Duty%C2%AE%3A%20Mobile_1.0.17_apk-dl.com.apk&dl=2">
+<button  class="btn" style="width:100%" title="Download Size: 87.2 MB"><i class="fa fa-download"></i> Download</button>
+</a>
+  </center>  <p>
+    Official CALL OF DUTY® designed exclusively for mobile phones. Play iconic multiplayer maps and modes anytime, anywhere. 100 player Battle Royale battleground? Fast 5v5 team deathmatch? Sniper vs sniper battle? Activision’s free-to-play CALL OF DUTY®: MOBILE has it all.
+<br>
+FREE TO PLAY ON MOBILE<br>
+
+Console quality HD gaming on your phone with customizable controls, voice and text chat, and thrilling 3D graphics and sound. Experience the thrill of the world’s most beloved shooter game, now on your phone for easy on-the-go fun.
+
+BELOVED GAME MODES AND MAPS<br>
+
+Play iconic multiplayer maps from Call of Duty®: Black Ops and Call of Duty®: Modern Warfare®, available for the first time for free. Or squad up with friends in a brand new 100-person battle royale survival map. Join the fun with millions of players from all around world!
+
+CUSTOMIZE YOUR UNIQUE LOADOUT<br>
+
+As you play CALL OF DUTY®: MOBILE you will unlock and earn dozens of famous characters, weapons, outfits, scorestreaks and pieces of gear that can be used to customize your loadouts. 
+Bring these loadouts into battle in Battle Royale and thrilling PvP multiplayers modes like Team Deathmatch, Frontline, Free For All, Search and Destroy, Domination, Hardpoint and many more.
+
+COMPETITIVE AND SOCIAL PLAY<br>
+
+Use skill and strategy to battle to the top in competitive Ranked Mode or to win the most Clan prizes as you play with friends. Compete and fight against millions of friends and foes in this thrilling free to play multiplayer shooter.
+
+CHOICE AND COMPLEXITY
+,br>
+Whether in gameplay, events, controls, or loadouts, CALL OF DUTY®: MOBILE offers complexity and depth in an ever-changing experience.
+
+Have what it takes to compete with the best? Download CALL OF DUTY®: MOBILE now!
+__<br>_______________________________________________________
+NOTE: We welcome any feedback during your experience to improve the game. To give feedback, in-game go to > Settings > Feedback > Contact Us.
+<br>
+Subscribe for Updates! ---> profile.callofduty.com/cod/registerMobileGame
+_____<br>____________________________________________________
+Note: An internet connection is required to play this game.
+<br>
+Please note this app contains social features that allow you to connect and play with friends and push notifications to inform you when exciting events or new content are taking place in the game. You can choose whether or not to utilize these features.
+<br>
+© 2019 Activision Publishing, Inc. ACTIVISION and CALL OF DUTY are trademarks of Activision Publishing, Inc.<br>
+ All other trademarks and trade names are the properties of their respective owners. 
+By downloading, installing or using this App, you agree to Activision's privacy policy and terms of us,<br>
+ as may be updated by Activision from time to time. Please visit http://www.activision.com/privacy/en/privacy.html to
+ view Activision's privacy policy and https://www.activision.com/legal/terms-of-use to view Activision's terms of use.
+ </p>
+    <style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+<body>
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="https://play-lh.googleusercontent.com/1IGiJvJf6nUgDSPpBh7zmAXGk31envBub7jhkumeN_5JUsou5Iry63j_5UAcVxcmfsI=w720-h310-rw" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="https://play-lh.googleusercontent.com/AhrmCMmFyMwIx8oNqostFm3eA3LWyXAH9MSm8jnyS5UlAd_2ORdDhOVLCjx7bhMFf00=w1536-h722-rw" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="https://play-lh.googleusercontent.com/-o71YJ2ABF5Up3DNbyMOdNCs9pPYZzo4Z8EByp7sNYOLRq4x7H5CI2YbpCNQHK6OAs86=w1536-h722-rw" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="https://play-lh.googleusercontent.com/gwe6qmgNN03iFJu8Zfp_azFCqlkrk0uPyHgYIPseH8WpGVrGtwkf-oqekFoGN-EDU6M=w1536-h722-rw" style="width:100%">
+  
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: right;
+  width: 48%;
+  padding: 15px 30px;
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: inline-table;
+}
+.img1 {
+  
+  border-radius: 5px;
+  padding: 5px;
+  width: 150px;
+}
+
+.img1:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+ .a1 {
+   text-decoration: none;
+   color: black;
+ }  
+ .a1:hover {
+   text-decoration: underline;
+   color: black;
+ }
+</style>
+<br>
+<br>
+<h2 align="center"> Alternatives </h2>
+
+<div class="row">
+  <div  class="column">
+   <a class="a1" href="Free Fire.html">
+    <img  class="img1" src="https://play-lh.googleusercontent.com/PLUrweTw35jmEbl7NNACcXZQjlGuOVdiP-HWwpOk2GUUyHh8wWaU-antu-mt9QqTYMk=s180-rw" alt="Snow" style="width:100%;border-radius: 5px;">
+    <p> Garena Free Fire</p>
+	</a>
+  </div>
+  <div class="column">
+  <a  class="a1" href="Scarfall.html">
+    <img  class="img1" src="https://play-lh.googleusercontent.com/K195SNO0366kefcE2ly8uDUdE3S0Be3SqSvoGmS26D_3gSKt7qB44sFj_PH648P3-2M=s180-rw" alt="Forest" style="width:100%">
+    <p> Scarfall</p>
+	</a>
+  </div>
+  <div class="column">
+  <a  class="a1" href="">
+    <img  class="img1" src="https://play-lh.googleusercontent.com/iZ7NP-56YenT2dpgKEAw3n7IKFyu-S_9Iu3ayo28XYTgZpFtxsK_HXltV36pysSJqq8=s180-rw" alt="Mountains" style="width:100%">
+    <p> Granny, Chapter 2</p>
+	</a>
+  </div>
+</div>
+
+  </div>
+  
+
+  <div class="right">
+  
+    <h1><i class="fa fa-info"></i> About</h1>
+    <p>Created and published by <b>Activision Publishing Inc.</b></p>
+    <h2><i class="fa fa-download"></i> Downloads</h2>
+	<p>150+</p>
+    <h2> Download Size</h2>
+	<p> 87.2 MB</p>
+	
+    <h2><img src="https://www.gstatic.com/android/market_images/web/play_prism_hlock_2x.png" width="20%"></h2>
+    <p><b>Downloads</b>: 100 Millions +</p>
+    <p><b>Rating</b>: 4.5+</p>
+  </div>
+</div>
+
+
+
+
+</body>
+
+</html>
+
+___________________________________________________________________________________________________________________________________________________________________________________________________________
+<!DOCTYPE html>
+<html>
+<head>
+<title> Scarfall</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css"> 
+		.context-menu { 
+			position: absolute; 
+			text-align: left; 
+			background: white; 
+			overflow:hidden;
+			border: 2px solid lightgrey; 
+			border-opacity: 0.5;
+		} 
+
+		.context-menu ul { 
+			padding: 0px; 
+			margin: 0px; 
+			min-width: 350px; 
+			list-style: none; 
+			
+			
+		} 
+
+		.context-menu ul li { 
+			padding-bottom: 7px; 
+			padding: 15px 16px;
+			padding-top: 7px; 
+			border: 1px solid lightgrey; 
+			
+		} 
+
+		.context-menu ul li a { 
+			text-decoration: none; 
+			color: black; 
+		} 
+
+		.context-menu ul li:hover { 
+			background: lightblue; 
+		} 
+	</style> 
+<div id="contextMenu" class="context-menu" 
+        style="display:none"> 
+        <ul> 
+            
+            <a href="javascript:history.go(0)" style="text-decoration: none;color: black;">
+			<li><i class="fa fa-refresh" style="float: left;padding: 3px 14px;" aria-hidden="true"></i> 
+			Refresh the page</li></a>
+            <a target="_blank" href="VPS SM APK.txt" style="text-decoration: none;color: black;">
+			<li> Inspect</li></a>
+            
+            <li><a onclick="alert('Select Text and Press CTRL and C at a time')" href="#" value="Copy text by CTRL+C"><b>Copy</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ctrl-C </a></li> 
+            <li><a onclick="alert(' Press CTRL and V at a time')" href="#"><b>Paste</b> &nbsp;&nbsp;&nbsp;&nbsp; Ctrl-V</a></li> 
+            <li><a href="#" onclick="window.print()"><b>Save Page as</b> &nbsp;&nbsp;&nbsp;&nbsp; Ctrl-S</a> </li>
+			<li>
+			<a href="About.html" onclick="close_window();return false;">About</a></li>
+        </ul> 
+    </div> 
+    </div> 
+	
+	<script>
+  var aTags = document.querySelectorAll('span[data-href]');
+
+for(var i = 0; i < aTags.length; i++){
+    var aTag = aTags[i];
+    aTag.addEventListener('click', function(e){
+        var ele = e.target;
+        window.location.replace(ele.getAttribute('data-href'));
+    });    
+}
+span[data-href]{
+    cursor:pointer;
+}
+</script>
+    <script> 
+        document.onclick = hideMenu; 
+        document.oncontextmenu = rightClick; 
+  
+        function hideMenu() { 
+            document.getElementById( 
+                "contextMenu").style.display = "none" 
+        } 
+  
+        function rightClick(e) { 
+            e.preventDefault(); 
+  
+            if (document.getElementById( 
+                "contextMenu").style.display == "block") 
+                hideMenu(); 
+            else { 
+                var menu = document 
+                    .getElementById("contextMenu") 
+                      
+                menu.style.display = 'block'; 
+                menu.style.left = e.pageX + "px"; 
+                menu.style.top = e.pageY + "px"; 
+            } 
+        } 
+    </script> 
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0px 1px black; 
+  border-radius: 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dddd; 
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lightblue; 
+}
+</style>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  opacity: 0.8;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: blue;
+  opacity: 1;
+  
+}
+</style>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<style>
+
+  
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+
+.main {
+  float: left;
+  width: 100%;
+  padding: 15px 40px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 100%;
+  padding: 10px 55px;
+  margin-top: 0px;
+}
+
+.img {
+  width: 5%;
+  opacity: 0.7;
+  border-radius: 0px;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  
+}
+.img:hover {
+  opacity: 1;
+  border-radius: 5px;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  
+  }
+  
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 100%;
+    padding: 15px 50px;
+  }
+  .right {
+    width: 100%;
+	
+  }
+  .img {
+    width: 15%;
+	 
+	 align: center;
+	
+	
+  
+}
+  
+   
+   
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  
+	
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#dddd;padding:15px;">
+  
+  <a href="https://smtechnlogy.github.io/apkgamestore/"><img class="img" src="1sm.png" width="5%"></a>
+  <h1 align="center">SM APK Store</h1>
+  <h3 align="center">Best APK Games store for downloading BR Games </h3>
+  
+</div>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" >Home</a>
+  <a target="_blank" href="https://smtechnlogy.github.io/shauryamishra/">Our Official</a>
+  <a href="About.html">About</a>
+  <a href="Contact.html">Contact</a>
+  <a href="All.html" class="active" >All Games</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+
+  <div class="main">
+  
+  
+  <center>
+    <h2><img src="https://play-lh.googleusercontent.com/K195SNO0366kefcE2ly8uDUdE3S0Be3SqSvoGmS26D_3gSKt7qB44sFj_PH648P3-2M=s180-rw" 
+	style="border-radius: 10px;"> 
+	</h2>
+	<h2>
+	ScarFall : The Royale Combat
+    </h2> 
+	</center>
+	<style>
+.btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  outline: none;
+  float: center;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+</style>
+<center>
+<a href="https://storage.evozi.com/apk/dl/19/11/03/com.phoenix.scarfall.free.fps.tps.battle.royale.combat.survival.shooting.battleground.war_60.apk">
+<button  class="btn" style="width:100%" title="Download Size: 67.5 MB"><i class="fa fa-download"></i> Download</button>
+</a>
+  </center>  
+    <p>Scarfall, the ultimate battle royale for your mobile. It is online shooting game with survival challenge. One of the best multiplayer game with strategic play.
+<br>
+Experience the journey of real survival shooter on the battlefields. Explore the environments of the shooting battlegrounds with parachute landing from the high speed flying helicopters. Encounter the best strategy action multiplayer game to hit your play store this year. Build up your own rules for the online and offline multiplayer shooter. Survive in the shrinking safe zone with utmost 3 chances to win over the war and be the #1 survivor in unknown battlegrounds.
+<br><br>
+Featuring team death match and solo death match which you can play online or offline with intense 4v4 squad mode. Play as lone soldier OR with clan to combat with rivals answering the call of duty. Scarfall offers TPS (Third Person Shooter) and FPS (First Person Shooter) play with modern vehicles to roam around quickly and reach the final destination in shrinking circle.
+<br><br>
+1. GAMEPLAY WITH IMMENSE ACTION<br><br>
+- Splendid 3D graphics with real life animations and environment.<br>
+- Perfect aiming and shot system, giving you thrilling experience of the scarfall.<br>
+- Exclusive gun fire sound with high quality audio, giving you intense feel of the action battleground.<br>
+- Flexible support for low end devices with graphics and other quality settings of the combat.<br>
+- Play at your own convenience with customizable game play UI in online and offline mode of shooting games.<br>
+<br>
+2. HIGHLY LOADED WEAPONRY AND VAST ENVIRONMENTS<br><br>
+- Load up guns from different modern weaponry category like machine guns, pistols, sniper rifles or shotguns to have a distinct experience in battleground survival games.<br>
+- Play as multiplayer with your friends worldwide to enjoy the best battle royale combat.<br>
+- New and amusing warfare environments of gun games in free battleground shooting game.<br>
+- Modern armory with high range scopes like 2x, 4x and 8x to shoot opponents of the action games.<br>
+- Challenge your friends directly by creating your private room and invite them to join the war of top shooting games.<br>
+- Get loaded with 2 primary guns and 1 secondary gun to shoot your rivals at your best in intense combat.<br>
+- Powerful explosives, melee weapons and medi-packs to accompany your journey of #1 survival in battleground games.<br>
+- Wide range clothing accessories to loot from map and design your own survival character.<br>
+<br><br>
+3. STAGGERING CLASSIC GAME MODE<br><br>
+- Survival against shrinking zone, with utmost 3 chances to re-spawn in free FPS and TPS gun games with multiplayer combat.<br>
+- Enjoy the survival game of the scarfall with thousands of items in the maps to loot and get equipped.<br>
+- Open the majestic vaults via keys to receive huge rewards of survival battlefield games.<br>
+- Hunt down your enemies with speed booster modern cars on the roads of scarfall.<br>
+- Boost your gameplay with enemy detector, exp booster in top free war games.<br>
+- Play the daring 24 hour challenges and earn exciting rewards.<br>
+<br>
+4. TPS AND FPS ACTION SURVIVAL WAR<br><br>
+- Scarfall gives you challenging war with dynamic and varied AI system in online and offline war games.<br>
+- Win and claim exciting daily bonus and rewards to boost your performance of TPS war.<br>
+- Upgrade faster and level up to unlock new powers, armory and rewards and land with flying colors on leader boards.<br>
+- Build your strategy to fight in team death match or solo death match mode of FPS shooting battle royale.<br>
+<br><br>
+Break the battle royale standards and dive into the modern warfare of unknown battlegrounds to be the last man standing in a way of ultimate hit man commando in this modern shooting game. So, grab your guns and bring your guts to survive the ultimate action survival shooter game, Scarfall - The royale combat.
+<br><br>
+To give feedback write us on :<br>
+support@scarfall.net
+<br>
+To stay updated, follow us on:<br>
+Facebook : http://facebook.com/scarfall<br>
+Twitch : https://www.twitch.tv/phoenixgames51<br>
+Discord : https://discord.gg/GRvCj3X<br>
+</p>
+    <style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+
+<body>
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="https://play-lh.googleusercontent.com/-J5EYPrQeozYZYIc7o7y9gmSckjGW_fTv9Fb7hgDVn3AsNMI9zqeDGX_O6Qiyok1tg=w720-h310-rw" style="height:100%;width: 100%;">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="https://play-lh.googleusercontent.com/kQwLiRGJx0Jctv_q_ue_xiyEoDDGJV9K9ssscrRhlW_ovzRr5e0pM8gSIe9FdKRNqw=w720-h310-rw" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="https://play-lh.googleusercontent.com/VCCUa7gv2f_DibyD6o1hzaCTsaM__u55dIGjnoMasHm5EHPtL-ZTmpxwDtQ_JDMT0HU=w720-h310-rw" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="https://play-lh.googleusercontent.com/omv2SDUdfKfimmoNnNIcx0Gt71O9fOwwAQuB0XrrsdtMnSzUROJvcpVylyIICKsHCSQ=w720-h310-rw" style="width:100%">
+  
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 48%;
+  
+  padding: 15px 30px;
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: inline-table;
+}
+.img1 {
+  
+  border-radius: 5px;
+  padding: 5px;
+  width: 150px;
+}
+
+.img1:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+ .a1 {
+   text-decoration: none;
+   color: black;
+ }  
+ .a1:hover {
+   text-decoration: underline;
+   color: black;
+ }
+</style>
+<br>
+<br>
+<h2 align="center"> Alternatives </h2>
+
+<div class="row">
+  <div  class="column">
+   <a class="a1" href="COD.html">
+    <img  class="img1" src="https://play-lh.googleusercontent.com/_vYBCFqUqqy7wXA_LxcnHtgy5VA2dHP4qv2x8PV9-uRzU84KWkn4qj9c7etTAX_6Dzo=s180-rw" alt="Snow" style="width:100%;border-radius: 5px;">
+    <p> Call Of Duty: Mobile</p>
+	</a>
+  </div>
+  <div class="column">
+  <a  class="a1" href="Free Fire.html">
+    <img  class="img1" src="https://play-lh.googleusercontent.com/PLUrweTw35jmEbl7NNACcXZQjlGuOVdiP-HWwpOk2GUUyHh8wWaU-antu-mt9QqTYMk=s180-rw" alt="Forest" style="width:100%">
+    <p> Free Fire</p>
+	</a>
+  </div>
+  <div class="column">
+  <a  class="a1" href="">
+    <img  class="img1" src="https://play-lh.googleusercontent.com/iZ7NP-56YenT2dpgKEAw3n7IKFyu-S_9Iu3ayo28XYTgZpFtxsK_HXltV36pysSJqq8=s180-rw" alt="Mountains" style="width:100%">
+    <p> Granny, Chapter 2</p>
+	</a>
+  </div>
+</div>
+
+  </div>
+  
+
+  <div class="right">
+  
+    <h1><i class="fa fa-info"></i> About</h1>
+    <p>Created and published by <b>XSQUADS Games Team</b></p>
+    <h2><i class="fa fa-download"></i> Downloads</h2>
+	<p>59</p>
+    <h2> Download Size</h2>
+	<p> 67.5 MB</p>
+    <h2><img src="https://www.gstatic.com/android/market_images/web/play_prism_hlock_2x.png" width="20%"></h2>
+    <p><b>Downloads</b>: 5 Millions +</p>
+    <p><b>Rating</b>: 4.1</p>
+  </div>
+</div>
+
+
+
+
+</body>
+
+</html>
+___________________________________________________________________________________________________________________________________________________________________________________________________________
+<!DOCTYPE html>
+<html>
+<head>
+<title> All Games</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css"> 
+		.context-menu { 
+			position: absolute; 
+			text-align: left; 
+			background: white; 
+			overflow:hidden;
+			border: 2px solid lightgrey; 
+			border-opacity: 0.5;
+		} 
+
+		.context-menu ul { 
+			padding: 0px; 
+			margin: 0px; 
+			min-width: 350px; 
+			list-style: none; 
+			
+			
+		} 
+
+		.context-menu ul li { 
+			padding-bottom: 7px; 
+			padding: 15px 16px;
+			padding-top: 7px; 
+			border: 1px solid lightgrey; 
+			
+		} 
+
+		.context-menu ul li a { 
+			text-decoration: none; 
+			color: black; 
+		} 
+
+		.context-menu ul li:hover { 
+			background: lightblue; 
+		} 
+	</style> 
+<div id="contextMenu" class="context-menu" 
+        style="display:none"> 
+        <ul> 
+            
+            <a href="javascript:history.go(0)" style="text-decoration: none;color: black;">
+			<li><i class="fa fa-refresh" style="float: left;padding: 3px 14px;" aria-hidden="true"></i> 
+			Refresh the page</li></a>
+            <a target="_blank" href="VPS SM APK.txt" style="text-decoration: none;color: black;">
+			<li> Inspect</li></a>
+            
+            <li><a onclick="alert('Select Text and Press CTRL and C at a time')" href="#" value="Copy text by CTRL+C"><b>Copy</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ctrl-C </a></li> 
+            <li><a onclick="alert(' Press CTRL and V at a time')" href="#"><b>Paste</b> &nbsp;&nbsp;&nbsp;&nbsp; Ctrl-V</a></li> 
+            <li><a href="#" onclick="window.print()"><b>Save Page as</b> &nbsp;&nbsp;&nbsp;&nbsp; Ctrl-S</a> </li>
+			<li>
+			<a href="About.html" onclick="close_window();return false;">About</a></li>
+        </ul> 
+    </div> 
+    </div> 
+	
+	<script>
+  var aTags = document.querySelectorAll('span[data-href]');
+
+for(var i = 0; i < aTags.length; i++){
+    var aTag = aTags[i];
+    aTag.addEventListener('click', function(e){
+        var ele = e.target;
+        window.location.replace(ele.getAttribute('data-href'));
+    });    
+}
+span[data-href]{
+    cursor:pointer;
+}
+</script>
+    <script> 
+        document.onclick = hideMenu; 
+        document.oncontextmenu = rightClick; 
+  
+        function hideMenu() { 
+            document.getElementById( 
+                "contextMenu").style.display = "none" 
+        } 
+  
+        function rightClick(e) { 
+            e.preventDefault(); 
+  
+            if (document.getElementById( 
+                "contextMenu").style.display == "block") 
+                hideMenu(); 
+            else { 
+                var menu = document 
+                    .getElementById("contextMenu") 
+                      
+                menu.style.display = 'block'; 
+                menu.style.left = e.pageX + "px"; 
+                menu.style.top = e.pageY + "px"; 
+            } 
+        } 
+    </script> 
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0px 1px black; 
+  border-radius: 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dddd; 
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lightblue; 
+}
+</style>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  opacity: 0.8;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: blue;
+  opacity: 1;
+  
+}
+</style>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<style>
+
+  
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+
+.main {
+  float: left;
+  width: 100%;
+  padding: 15px 40px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 100%;
+  padding: 10px 55px;
+  margin-top: 0px;
+}
+
+.img {
+  width: 5%;
+  opacity: 0.7;
+  border-radius: 0px;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  
+}
+.img:hover {
+  opacity: 1;
+  border-radius: 5px;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  
+  }
+  
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 100%;
+    padding: 15px 50px;
+  }
+  .right {
+    width: 100%;
+	
+  }
+  .img {
+    width: 15%;
+	 
+	 align: center;
+	
+	
+  
+}
+  
+   
+   
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  
+	
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color:#dddd;padding:15px;">
+  
+  <a href="https://smtechnlogy.github.io/apkgamestore/"><img class="img" src="1sm.png" width="5%"></a>
+  <h1 align="center">SM APK Store</h1>
+  <h3 align="center">Best APK Games store for downloading BR Games </h3>
+  
+</div>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" >Home</a>
+  <a target="_blank" href="https://smtechnlogy.github.io/shauryamishra/">Our Official</a>
+  <a href="About.html">About</a>
+  <a href="Contact.html">Contact</a>
+  <a href="All.html" class="active" >All Games</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<div class="main">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 5px;
+}
+.img1 {
+  
+  border-radius: 5px;
+  padding: 5px;
+  width: 150px;
+}
+
+.img1:hover {
+  box-shadow: 0 0 8px 3px rgba(0, 140, 186, 0.5);
+}
+ .a1 {
+   text-decoration: none;
+   color: black;
+ }  
+ .a1:hover {
+   text-decoration: underline;
+   color: black;
+ }
+
+</style>
+
+
+
+<div class="row">
+  <div class="column">
+  <a class="a1" href="Free Fire.html">
+    <img class="img1" src="https://play-lh.googleusercontent.com/PLUrweTw35jmEbl7NNACcXZQjlGuOVdiP-HWwpOk2GUUyHh8wWaU-antu-mt9QqTYMk=s180-rw" alt="Snow" style="width:100%;height: 100%;">
+    <p> Free Fire</p>
+	</a>
+  </div>
+  <div class="column">
+  <a class="a1" href="COD.html">
+    <img class="img1" src="https://play-lh.googleusercontent.com/_vYBCFqUqqy7wXA_LxcnHtgy5VA2dHP4qv2x8PV9-uRzU84KWkn4qj9c7etTAX_6Dzo=s180-rw" alt="Forest" style="width:100%;height: 100%;">
+    <p>COD: M<p>
+	</a>
+  </div>
+  <div class="column">
+    <a class="a1" href="Scarfall.html">
+    <img class="img1" src="https://play-lh.googleusercontent.com/K195SNO0366kefcE2ly8uDUdE3S0Be3SqSvoGmS26D_3gSKt7qB44sFj_PH648P3-2M=s180-rw" alt="Mountains" style="width:100%;height: 100%;">
+    <p> Scarfall</p>
+	</a>
+  </div>
+  <div class="column">
+    <img class="img1" src="https://play-lh.googleusercontent.com/yT_LBq_tyKeIDohKDsqN_Qt18jGIPUYIxY2C-1-E2YA9Qd60uZW08pua17qBmIiDPA=s180-rw" alt="Snow" style="width:100%;height: 100%;">
+    <p> Granny</p>
+  </div>
+  <div class="column">
+    <img class="img1" src="https://play-lh.googleusercontent.com/iZ7NP-56YenT2dpgKEAw3n7IKFyu-S_9Iu3ayo28XYTgZpFtxsK_HXltV36pysSJqq8=s180-rw" alt="Forest" style="width:100%;height: 100%;">
+    <p> Granny: Ch-2 </p>
+     </div>
+  <div class="column">
+    <img class="img1" src="https://play-lh.googleusercontent.com/gGcYfeKEHXYlDR3jvO4jABHZV88G5Xj6lqSrD3mBq2wvo6GfqmwrXvdt2q-cELcYe0o=s180-rw" alt="Mountains" style="width:100%;height: 100%;">
+    <p> Subway Surfer</p>
+  </div>
+  
+  
+</div>
+</div>
+</html>
+
