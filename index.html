@@ -4,7 +4,140 @@
 <title> Home</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="icon" href="1sm.png" type="image/png" sizes="16x16 32x32">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  
+}
+
+::selection {
+  color: white;
+  background: darkgray;
+}
+</style>
+<style type="text/css"> 
+		.context-menu { 
+			position: absolute; 
+			text-align: left; 
+			background: white; 
+			overflow:hidden;
+			border: 2px solid lightgrey; 
+			border-opacity: 0.5;
+		} 
+
+		.context-menu ul { 
+			padding: 0px; 
+			margin: 0px; 
+			min-width: 350px; 
+			list-style: none; 
+			
+			
+		} 
+
+		.context-menu ul li { 
+			padding-bottom: 7px; 
+			padding: 15px 16px;
+			padding-top: 7px; 
+			border: 1px solid lightgrey; 
+			
+		} 
+
+		.context-menu ul li a { 
+			text-decoration: none; 
+			color: black; 
+		} 
+
+		.context-menu ul li:hover { 
+			background: lightblue; 
+		} 
+	</style> 
+<div id="contextMenu" class="context-menu" 
+        style="display:none"> 
+        <ul> 
+            
+            <a href="javascript:history.go(0)" style="text-decoration: none;color: black;">
+			<li><i class="fa fa-refresh" style="float: left;padding: 3px 14px;" aria-hidden="true"></i> 
+			Refresh the page</li></a>
+            <a target="_blank" href="VPS SM APK.txt" style="text-decoration: none;color: black;">
+			<li> Inspect</li></a>
+            
+            <li><a onclick="alert('Select Text and Press CTRL and C at a time')" href="#" value="Copy text by CTRL+C"><b>Copy</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ctrl-C </a></li> 
+            <li><a onclick="alert(' Press CTRL and V at a time')" href="#"><b>Paste</b> &nbsp;&nbsp;&nbsp;&nbsp; Ctrl-V</a></li> 
+            <li><a href="#" onclick="window.print()"><b>Save Page as</b> &nbsp;&nbsp;&nbsp;&nbsp; Ctrl-S</a> </li>
+			<li>
+			<a href="About.html" onclick="close_window();return false;">About</a></li>
+        </ul> 
+    </div> 
+    </div> 
+	
+	<script>
+  var aTags = document.querySelectorAll('span[data-href]');
+
+for(var i = 0; i < aTags.length; i++){
+    var aTag = aTags[i];
+    aTag.addEventListener('click', function(e){
+        var ele = e.target;
+        window.location.replace(ele.getAttribute('data-href'));
+    });    
+}
+span[data-href]{
+    cursor:pointer;
+}
+</script>
+    <script> 
+        document.onclick = hideMenu; 
+        document.oncontextmenu = rightClick; 
+  
+        function hideMenu() { 
+            document.getElementById( 
+                "contextMenu").style.display = "none" 
+        } 
+  
+        function rightClick(e) { 
+            e.preventDefault(); 
+  
+            if (document.getElementById( 
+                "contextMenu").style.display == "block") 
+                hideMenu(); 
+            else { 
+                var menu = document 
+                    .getElementById("contextMenu") 
+                      
+                menu.style.display = 'block'; 
+                menu.style.left = e.pageX + "px"; 
+                menu.style.top = e.pageY + "px"; 
+            } 
+        } 
+    </script> 
+
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0px 1px black; 
+  border-radius: 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dddd; 
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lightblue; 
+}
+</style> 
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -136,7 +269,7 @@ function topFunction() {
 </head>
 <body style="font-family:Verdana;">
 
-<div style="background-color:#dddd;padding:15px;">
+<div style="background-color: lightblue; box-shadow: #007CC7; padding:15px;">
   
   <a href="https://smtechnlogy.github.io/apkgamestore/"><img class="img" src="1sm.png" width="5%"></a>
   <h1 align="center">SM APK Store</h1>
@@ -231,12 +364,130 @@ function myFunction() {
 }
 </script>
 <div class="main">
-<font color="black">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  
+}
+
+.left {
+  width: 15%;
+}
+
+.middle {
+  width: 68%;
+  
+}
+
+
+.middle2 {
+  width: 2%;
+  }
+  .middle3 {
+  width: 2%;
+  }
+  
+
+.right {
+  width: 13%;
+}  
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .column {
+    width: 100%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1100px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+
+
+
+<div class="row">
+  <div class="column left" style=" border-radius: 10px;position: relative; background-color: lightblue;" >
+    <style> 
+	  .btngroup {
+	    background-color: white;
+		text-size: 18px;
+		opacity: 0.7;
+		color: black;
+		border: none;
+		padding: 10px 14px;
+		outline: none;
+		border-radius: 10px;
+		width: 100%;
+	}
+      .btngroup:hover {
+         background-color: white;
+		 opacity: 1;
+		 padding: 10px ;
+	}
+	
+	
+      
+ 	</style>	
+       
+							
+					
+                                  <div>
+                                   <a href= "https://www.youtube.com/channel/UC80KXUW1Hw8URvvf8lq-EHw"> <button class="btngroup" width="100%" > Youtube Channel</button>
+									</a></div>
+                                
+                                  <div>
+                                    <a href= "https://sites.google.com/view/smtechnologyhomeofficial/"><button  class="btngroup" width="100%" > SM Official Web</button></a></div>
+                                
+                                <div>
+                                    <a href= "Contact.html"><button  class= "btngroup"  > Contact Us</button></a></div>
+									<div>
+									 <a href= "Feedback.html"><button class="btngroup" > Feedback</button></a></div>
+									  <div>
+									 <button  class="btngroup" > SM WordEditor 1.1</button></div>
+									  <div>
+									 <button  class="btngroup" > About Us</button></div>
+									  <div>
+									  <button class="btngroup"  > SM WordEditor 1.2</button></div>
+									   <div>
+									  <a href= "Free Fire.html"><button class="btngroup" > Free Fire</button></a></div>
+                               <div>
+									  <a href= "Free Mobile.html"><button  class="btngroup" > Free SmartPhone</button></a></div>
+								 
+                      
+  </div>
+  <div class="column middle2" style="border-radius: 10px;background-color: transparent;">
+  </div>
+  <div class="column middle" style="border-radius: 10px;background-color: lightblue; text-align:center; height:800px ;">
+    <font color="black">
 <h1> SM APK Games Store</h1>
 <p> Here you can downloads BR Games apk files and install it in your Mobile. Its very useful when you are not unable to access any popular game
 from Play Store. You can download APK files of those games here. Its a Battle Royale Games Store. You are recommended to download these apk
 files only on android devices or in emulators. 
 </p>
+
 <style>
 .btn {
   background-color: DodgerBlue;
@@ -253,15 +504,83 @@ files only on android devices or in emulators.
 .btn:hover {
   background-color: RoyalBlue;
 }
+
+	
 </style>
 <br>
 <center>
 <a href="All.html">
-<button  class="btn" style="width:50%"> Get Started</button>
-</a>
+<button  class="btn" style="width:80%" style="border-radius: 10px;"> Get Started</button></a>
+<br><br><br><br>
+<p style="float: right; ">
+<font size="2" color="blue">
+<i class="fa fa-copyright"></i> <b>Copyright SM Technology 2020</b>
+</font>
+</p>
+
 </center>
+
 </div>
 
 
+
+  
+  <div class="column middle3" style="border-radius: 10px;background-color: transparent;">
+  
+  </div>
+  <div class="column right" style="border-radius: 10px;" >
+  
+  <h3> <center><b> News</b> </center></h3>
+ <hr color="white">
+  <font size="2px">
+  <center>
+  <marquee direction="up" height= "200px"> <center>
+    <img src="https://www.pngkey.com/png/full/273-2730047_forum-in-the-news-icon-online-newspaper-icon.png" width="50%"> 
+	<br>No NEWS </center>
+  </marquee>	
+ 
+ 
+ </div>
+</div>
+
+<style>
+
+
+ 
+	  
+	  
+	  
+.smbtn {
+	  background-color: red;
+	  
+	  left: 2;
+	  position: fixed;
+	  color: white;
+	  font-size: 20px;
+	  padding: 15px 16px;
+	  border-radius: 50%;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  transition-duration: 0.8s;
+	  
+	}
+	.smbtn:hover {
+	  background-color: white;
+	  color: red;
+	  border: 1px solid red;
+	}
+</style>
+</div>
+
+
+
+
+
+ 
+
+
+
+</html>
 
 
