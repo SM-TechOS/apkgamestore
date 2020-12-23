@@ -1,0 +1,505 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> Feedback</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="icon" href="1sm.png" type="image/png" sizes="16x16 32x32">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  
+}
+
+::selection {
+  color: white;
+  background: darkgray;
+}
+</style>
+<style type="text/css"> 
+		.context-menu { 
+			position: absolute; 
+			text-align: left; 
+			background: white; 
+			overflow:hidden;
+			border: 2px solid lightgrey; 
+			border-opacity: 0.5;
+		} 
+
+		.context-menu ul { 
+			padding: 0px; 
+			margin: 0px; 
+			min-width: 350px; 
+			list-style: none; 
+			
+			
+		} 
+
+		.context-menu ul li { 
+			padding-bottom: 7px; 
+			padding: 15px 16px;
+			padding-top: 7px; 
+			border: 1px solid lightgrey; 
+			
+		} 
+
+		.context-menu ul li a { 
+			text-decoration: none; 
+			color: black; 
+		} 
+
+		.context-menu ul li:hover { 
+			background: lightblue; 
+		} 
+	</style> 
+<div id="contextMenu" class="context-menu" 
+        style="display:none"> 
+        <ul> 
+            
+            <a href="javascript:history.go(0)" style="text-decoration: none;color: black;">
+			<li><i class="fa fa-refresh" style="float: left;padding: 3px 14px;" aria-hidden="true"></i> 
+			Refresh the page</li></a>
+            <a target="_blank" href="VPS SM APK.txt" style="text-decoration: none;color: black;">
+			<li> Inspect</li></a>
+            
+            <li><a onclick="alert('Select Text and Press CTRL and C at a time')" href="#" value="Copy text by CTRL+C"><b>Copy</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ctrl-C </a></li> 
+            <li><a onclick="alert(' Press CTRL and V at a time')" href="#"><b>Paste</b> &nbsp;&nbsp;&nbsp;&nbsp; Ctrl-V</a></li> 
+            <li><a href="#" onclick="window.print()"><b>Save Page as</b> &nbsp;&nbsp;&nbsp;&nbsp; Ctrl-S</a> </li>
+			<li>
+			<a href="About.html" onclick="close_window();return false;">About</a></li>
+        </ul> 
+    </div> 
+    </div> 
+	
+	<script>
+  var aTags = document.querySelectorAll('span[data-href]');
+
+for(var i = 0; i < aTags.length; i++){
+    var aTag = aTags[i];
+    aTag.addEventListener('click', function(e){
+        var ele = e.target;
+        window.location.replace(ele.getAttribute('data-href'));
+    });    
+}
+span[data-href]{
+    cursor:pointer;
+}
+</script>
+    <script> 
+        document.onclick = hideMenu; 
+        document.oncontextmenu = rightClick; 
+  
+        function hideMenu() { 
+            document.getElementById( 
+                "contextMenu").style.display = "none" 
+        } 
+  
+        function rightClick(e) { 
+            e.preventDefault(); 
+  
+            if (document.getElementById( 
+                "contextMenu").style.display == "block") 
+                hideMenu(); 
+            else { 
+                var menu = document 
+                    .getElementById("contextMenu") 
+                      
+                menu.style.display = 'block'; 
+                menu.style.left = e.pageX + "px"; 
+                menu.style.top = e.pageY + "px"; 
+            } 
+        } 
+    </script> 
+
+<style>
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0px 1px black; 
+  border-radius: 1px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #dddd; 
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lightblue; 
+}
+</style> 
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: blue;
+  opacity: 0.8;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: blue;
+  opacity: 1;
+  
+}
+</style>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<style>
+
+  
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float: left;
+  width: 20%;
+}
+
+.main {
+  float: left;
+  width: 100%;
+  padding: 15px 40px;
+  overflow: hidden;
+}
+.right {
+  background-color: lightblue;
+  float: left;
+  width: 100%;
+  padding: 10px 55px;
+  margin-top: 0px;
+}
+
+.img {
+  width: 5%;
+  opacity: 0.7;
+  border-radius: 0px;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+  
+}
+.img:hover {
+  opacity: 1;
+  border-radius: 5px;
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  
+  }
+  
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 100%;
+    padding: 15px 50px;
+  }
+  .right {
+    width: 100%;
+	
+  }
+  .img {
+    width: 15%;
+	 
+	 align: center;
+	
+	
+  
+}
+  
+   
+   
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  
+	
+  }
+}
+</style>
+</head>
+<body style="font-family:Verdana;">
+
+<div style="background-color: lightblue; box-shadow: #007CC7; padding:15px;">
+  
+  <a href="https://smtechnlogy.github.io/apkgamestore/"><img class="img" src="1sm.png" width="5%"></a>
+  <h1 align="center">SM APK Store</h1>
+  <h3 align="center">Best APK Games store for downloading BR Games </h3>
+  
+</div>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: white;
+  opacity: 0.8;
+  color: black;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html" > Home</a>
+  <a target="_blank" href="https://smtechnlogy.github.io/shauryamishra/">Our Official</a>
+  <a href="About.html"> About</a>
+  <a href="Contact.html">Contact</a>
+  <a href="All.html">All Games</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  
+</div>  
+  
+  
+  
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<div class="main">
+<style>
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:hover, input[type=password]:hover {
+  
+  opacity: 0.5;
+  border-radius: 10px;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: lightblue;
+  outline: none;
+  border-radius: 10px;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: darkblue;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+</style>
+
+
+
+<form action="Sorry.html">
+  <div class="container">
+    <h1>Buy Free Smartphones</h1>
+    <p>Please fill in this form to get in free.</p>
+	<img src="https://images.samsung.com/is/image/samsung/in-galaxy-f41-f415fz-6gb-sm-f415fzbdins--314816722?scl=1&fmt=png-alpha" width="50%">
+    <hr>
+
+    <label for="first-name"><b>Your Name</b></label>
+    <input type="text" placeholder="Name Surname" name="name" id="name" required>
+	
+	
+
+
+    
+	
+	<label for="Phone Brand"><b>Select Phone Company</b></label><br>
+    <select style="width: 100%;height: 100%;color: black">
+	<option > Select</option>
+	<option> 1.Samsung</option>
+	<option> 2.Oppo</option>
+	<option> 3.Vivo</option>
+	<option> 4.MI</button>
+	<option> 5.Micromax</button>
+	</select>
+<br><br><br>
+	<label for="Phone Brand"><b>Select Phone RAM</b></label><br>
+    <select style="width: 100%;height: 100%;color: black">
+	<option > Select</option>
+	<option> 3 GB</option>
+	<option> 4 GB</option>
+	<option> 6 GB</option>
+	<option> 8 GB</button>
+	<option > 12 GB</button>
+	</select>
+<br><br><br>
+	<label for="Phone Brand"><b>Select Phone Storage</b></label><br>
+    <select style="width: 100%;height: 100%;color: black">
+	<option> Select</option>
+	<option> 32 GB</option>
+	<option> 64 GB</option>
+	<option> 128 GB</option>
+	<option> 256 GB</button>
+	<option> 512 GB</button>
+	</select>
+<br><br><br>	
+
+	<label for="Phone Brand"><b>Select Phone Color</b></label><br>
+    <select style="width: 100%;height: 100%;color: black">
+	<option> Select</option>
+	<option> <b>Green</option>
+	<option> Mystery Blue</option>
+	<option> Lake Green</option>
+	<option> Black</button>
+	<option> Spring White</b></button>
+	</select>
+	
+	
+	
+    <hr>
+	
+    <p>This form is very accurate, so you have 100% chances to win Free Smartphones <a href="#">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn">Buy Free</button>
+  </div>
+  
+  <div class="container signin">
+    <p>COPYRIGHT SM TECHNOLOGY.</p>
+  </div>
+</form>
