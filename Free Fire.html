@@ -5,7 +5,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link rel="icon" href="https://play-lh.googleusercontent.com/PLUrweTw35jmEbl7NNACcXZQjlGuOVdiP-HWwpOk2GUUyHh8wWaU-antu-mt9QqTYMk=s180-rw" type="image/png" sizes="16x16 32x32">
 <style>
 /* width */
 ::-webkit-scrollbar {
@@ -33,6 +33,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
+  
 }
 
 #myBtn {
@@ -48,19 +49,21 @@ body {
   opacity: 0.8;
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: 15px 15px;
   border-radius: 4px;
 }
 
 #myBtn:hover {
   background-color: blue;
   opacity: 1;
+ 
   
 }
 </style>
 
 
 <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+
 
 
 
@@ -101,6 +104,7 @@ function topFunction() {
   width: 100%;
   padding: 15px 40px;
   overflow: hidden;
+  
 }
 .right {
   background-color: lightblue;
@@ -146,7 +150,7 @@ function topFunction() {
   
 }
   
-   
+   }
    
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
@@ -162,7 +166,7 @@ function topFunction() {
 
 <div style="background-color:#dddd;padding:15px;">
   
-  <a href="https://smtechnlogy.github.io/apkgamestore/"><img class="img" src="1sm.png" width="5%"></a>
+  <a href="https://smtechnlogy.github.io/apkgamestore/"><img class="img" src="1sm.png" width="5%" title="SM Logo"></a>
   <h1 align="center">SM APK Store</h1>
   <h3 align="center">Best APK Games store for downloading BR Games </h3>
   
@@ -228,19 +232,20 @@ body {
 
 
 <div class="topnav" id="myTopnav">
-  <a href="index.html" >Home</a>
-  <a target="_blank" href="https://smtechnlogy.github.io/shauryamishra/">Our Official</a>
-  <a href="About.html">About</a>
-  <a href="Contact.html">Contact</a>
-  <a href="All.html" class="active" >All Games</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <a href="index.html" ><i class="fa fa-home"></i> Home</a>
+  <a target="_blank" href="https://smtechnlogy.github.io/shauryamishra/"><i class="fa fa-link"></i> Our Official</a>
+  <a href="About.html"><i class="fa fa-info"></i> About</a>
+  <a href="Contact.html"><i class="fa fa-phone"></i> Contact</a>
+  <a href="All.html" class="active" ><i class="fa fa-gamepad"></i> All Games</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
     <i class="fa fa-bars"></i>
   </a>
+  <a href="go.html"><i class="fa fa-search"></i> Search</a> 
 </div>
 
 
 <script>
-function myFunction() {
+function myFunction1() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
@@ -284,8 +289,11 @@ function myFunction() {
 <center>
 <a href="https://storage.evozi.com/apk/dl/20/08/14/com.dts.freefireth_2019113979.apk">
 <button  class="btn" style="width:100%" title="Download Size: 46.3 MB"><i class="fa fa-download"></i> Download</button>
-</a>
-  </center>  
+</a>  </center>
+
+
+  
+  
     <p>Free Fire is the ultimate survival shooter game available on mobile. Each 10-minute game places you on a remote island where you are pit against 49 other players, all seeking survival. Players freely choose their starting point with their parachute, and aim to stay in the safe zone for as long as possible. Drive vehicles to explore the vast map, hide in wild, or become invisible by proning under grass or rifts. Ambush, snipe, survive, there is only one goal: to survive and answer the call of duty.
 <br>
 <b>[Survival shooter in its original form]</b><br>
@@ -477,45 +485,104 @@ function showSlides() {
 <br>
 <br>
 <h2 align="center"> Alternatives </h2>
+<style> 
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('https://www.w3schools.com//css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  outline: none;
+}
 
+input[type=text]:focus {
+  width: 80%;
+  border-radius: 15px;
+}
+</style>
+<script>
+function myFunction() {
+  var input = document.getElementById("Search");
+  var filter = input.value.toLowerCase();
+  var nodes = document.getElementsByClassName('target');
+
+  for (i = 0; i < nodes.length; i++) {
+    if (nodes[i].innerText.toLowerCase().includes(filter)) {
+      nodes[i].style.display = "block";
+    } else {
+      nodes[i].style.display = "none";
+    }
+  }
+}
+</script>
+<center>
+<form>
+  <input id="Search" onkeyup="myFunction()" type="text" name="search" placeholder="Search..">
+</form>
+</center>
+<hr>
 <div class="row">
+<div class="target">
   <div  class="column">
    <a class="a1" href="COD.html">
     <img  class="img1" src="https://play-lh.googleusercontent.com/_vYBCFqUqqy7wXA_LxcnHtgy5VA2dHP4qv2x8PV9-uRzU84KWkn4qj9c7etTAX_6Dzo=s180-rw" alt="Snow" style="width:100%;border-radius: 5px;">
     <p> Call Of Duty: Mobile</p>
 	</a>
   </div>
+  </div>
+  <div class="target">
   <div class="column">
   <a  class="a1" href="Scarfall.html">
     <img  class="img1" src="https://play-lh.googleusercontent.com/K195SNO0366kefcE2ly8uDUdE3S0Be3SqSvoGmS26D_3gSKt7qB44sFj_PH648P3-2M=s180-rw" alt="Forest" style="width:100%">
     <p> Scarfall</p>
 	</a>
   </div>
+  </div>
+  <div class="target">
   <div class="column">
   <a  class="a1" href="">
     <img  class="img1" src="https://play-lh.googleusercontent.com/iZ7NP-56YenT2dpgKEAw3n7IKFyu-S_9Iu3ayo28XYTgZpFtxsK_HXltV36pysSJqq8=s180-rw" alt="Mountains" style="width:100%">
     <p> Granny, Chapter 2</p>
 	</a>
   </div>
+  </div>
 </div>
 
-  </div>
   
+</div>  
 
-  <div class="right">
+  <div class="right" style="background-image: url('https://cutewallpaper.org/21/free-fire-background/Free-Fire-Dragon-Wallpapers-Background-at-Movies-Monodomo.jpg');
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat
+  background-opacity: 0.7;">
   
     <h1><i class="fa fa-info"></i> About</h1>
-    <p>Created and published by <b>Garena International I Private Limited</b></p>
-    <h2><i class="fa fa-download"></i> Downloads</h2>
+	<p>Created and published by <b>Garena International</b></p>
+	
+	 
+	<h2><i class="fa fa-download"></i> Downloads</h2>
 	<p>100+</p>
 	<h2> Download Size</h2>
 	<p> 46.3 MB</p>
-    
+    <font color="">
     <h2><img src="https://www.gstatic.com/android/market_images/web/play_prism_hlock_2x.png" width="20%"></h2>
     <p><b>Downloads</b>: 600 Millions +</p>
     <p><b>Rating</b>: 4.5+</p>
+	<p><b>Download Size</b>: 718 MB</p>
+	
+	<p align="center"><a href="Feedback.html"><button class="btn"> Report Game</button></a></p>
+	</font>
+	
   </div>
-</div>
+
 
 
 
