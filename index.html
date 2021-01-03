@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Home</title>
+<title> SM APK Store: Home</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,6 +9,8 @@
 
 <link rel="icon" href="1sm.png" type="image/png" sizes="16x16 32x32">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ 
 <style>
 ::-moz-selection { /* Code for Firefox */
   color: white;
@@ -21,6 +23,51 @@
 }
 </style>
 
+   <style>
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+ 
+	
+	
 
 <style>
 /* width */
@@ -115,14 +162,14 @@ function topFunction() {
 .main {
   float: left;
   width: 100%;
-  padding: 15px 20px;
+  padding: 15px 10px;
   overflow: hidden;
 }
 .right {
   background-color: lightblue;
+  
   float: left;
-  width: 100%;
-  padding: 10px 55px;
+  padding: 10px 5px;
   margin-top: 0px;
 }
 
@@ -147,7 +194,7 @@ function topFunction() {
   /* For tablets: */
   .main {
     width: 100%;
-    padding: 15px 15px;
+    padding: 15px 20px;
   }
   .right {
     width: 100%;
@@ -176,9 +223,8 @@ function topFunction() {
 </head>
 <body style="font-family:Verdana;">
 
-<div style="background-color: lightblue; box-shadow: #007CC7; padding:15px;">
-  
-  <a href="https://smtechnlogy.github.io/apkgamestore/"><img class="img" src="1sm.png" width="5%"></a>
+<div style="background-color: #f1f1f1; padding:15px;">
+  <a href="https://smtechnlogy.github.io/apkgamestore/"><img class="img" src="1sm.png" width="5%" title="SM Logo"></a>
   <h1 align="center">SM APK Store</h1>
   <h3 align="center">Best APK Games store for downloading BR Games </h3>
   
@@ -244,15 +290,22 @@ body {
 </style>
 
 
+
+
+
+
 <div class="topnav" id="myTopnav">
-  <a href="index.html" class="active"> Home</a>
-  <a target="_blank" href="https://smtechnlogy.github.io/shauryamishra/">Our Official</a>
-  <a href="About.html"> About</a>
-  <a href="Contact.html">Contact</a>
-  <a href="All.html">All Games</a>
+  <a href="index.html" class="active"><i class="fa fa-home"></i> Home</a>
+  <a target="_blank" href="https://smtechnlogy.github.io/shauryamishra/">
+  <i class="fa fa-link"></i> Our Official</a>
+  <a href="About.html"><i class="fa fa-info"></i> About</a>
+  <a href="Contact.html"><i class="fa fa-phone"></i> Contact</a>
+  <a href="All.html"><i class="fa fa-gamepad"></i> All Games</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
+  <a href="go.html"><i class="fa fa-search"></i> Search</a>
+
   
 </div>  
   
@@ -380,36 +433,50 @@ function myFunction() {
 									  <button class="btngroup"  > SM WordEditor 1.2</button></div>
 									   <div>
 									  <a href= "Free Fire.html"><button class="btngroup" > Free Fire</button></a></div>
-                               <div>
-									  <a href= "Free Mobile.html"><button  class="btngroup" > Free SmartPhone</button></a></div>
-								 
-                      
+                            
+
   </div>
+  
   <div class="column middle2" style="border-radius: 10px;background-color: transparent;">
   </div>
-  <div class="column middle" style="border-radius: 10px;background-color: lightblue; text-align:center; height:800px ;">
+  <div class="column middle" style="border-radius: 10px;background-color: lightblue; text-align:center; height: auto;">
+  
     <font color="black">
 <h1> SM APK Games Store</h1>
-<p> Here you can downloads BR Games apk files and install it in your Mobile. Its very useful when you are not unable to access any popular game
+<p> Here you can downloads BR Games apk files and install it in your Mobile by using less data. Its very useful when you are not unable to access any popular game
 from Play Store. You can download APK files of those games here. Its a Battle Royale Games Store. You are recommended to download these apk
 files only on android devices or in emulators. 
+Generally our aim was to make a website in which we will give free apk files which are in smaller size. We have compressed the size of application. 
+
+
+
 </p>
+
 
 <style>
 .btn {
   background-color: DodgerBlue;
   border: none;
+  position: relative;
   color: white;
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
   outline: none;
   float: center;
+  font-family: Garamond;
+  border-radius: 8px;
+  width:80%;
+  height: 90%;
+  transition: 0.3s;
 }
 
 /* Darker background on mouse-over */
 .btn:hover {
   background-color: RoyalBlue;
+  width: 82%;
+  border-radius: 10px;
+  height: 100%;
 }
 
 	
@@ -417,7 +484,7 @@ files only on android devices or in emulators.
 <br>
 <center>
 <a href="All.html">
-<button  class="btn" style="width:80%" style="border-radius: 10px;"> Get Started</button></a>
+<button  class="btn"  style="border-radius: 10px;"> Get Started</button></a>
 <br><br><br><br>
 <p style="float: right; ">
 <font size="2" color="blue">
@@ -435,59 +502,240 @@ files only on android devices or in emulators.
   <div class="column middle3" style="border-radius: 10px;background-color: transparent;">
   
   </div>
-  <div class="column right" style="border-radius: 10px;" >
+  <div class="column right" style="border-radius: 10px; padding: 0px 3px; " >
+  <style>
+  .href  {
+    color: black;
+	text-decoration: none;
+  }
+  .href:hover  {
+    color: blue;
+	text-decoration: underline;
+  }
   
+  </style>
   <h3> <center><b> News</b> </center></h3>
  <hr color="white">
   <font size="2px">
   <center>
-  <marquee direction="up" height= "200px"> <center>
-    <img src="https://www.pngkey.com/png/full/273-2730047_forum-in-the-news-icon-online-newspaper-icon.png" width="50%"> 
-	<br>No NEWS </center>
+  <marquee direction="up" scrollamount= "5" onmouseover="stop();" onmouseout="start();" height= "200px"> 
+    <center>
+        <p> <b>Updated Search bar of Games search. <a class="href" href="All.html">Click here to see!</a></b></p>
+		<p> <b>Updated Get Started button</b></p>
+		<p> <b>Added discover content in <a class="href" href="index.html">Home Page.</b></a></p>
+		
+
+
+</center>
   </marquee>	
  
  
  </div>
 </div>
 
+
+
+<div style="border-radius: 10px; padding: 12px 12px; background-image: linear-gradient(white, #f1f1f1, lightblue);height: 100%; width: 100%;">
+
+<br/>
+<br/>
+<font size="3">
+<p>Discover Popular Games. Download and save 90% of data.</p>
+<hr>
+
+
+
+
 <style>
+* {
+  box-sizing: border-box;
+}
 
+.column2 {
+  float: left;
+  width: 33.3%;
+  padding: 5px;
+}
+.img1 {
+  
+  border-radius: 5px;
+  padding: 5px;
+  width: 100px;
+  transition: 0.3s;
+}
 
- 
-	  
-	  
-	  
-.smbtn {
-	  background-color: red;
-	  
-	  left: 2;
-	  position: fixed;
-	  color: white;
-	  font-size: 20px;
-	  padding: 15px 16px;
-	  border-radius: 50%;
-	  border: none;
-	  outline: none;
-	  cursor: pointer;
-	  transition-duration: 0.8s;
-	  
-	}
-	.smbtn:hover {
-	  background-color: white;
-	  color: red;
-	  border: 1px solid red;
-	}
+.img1:hover {
+  box-shadow: 0 0 8px 3px rgba(0, 140, 186, 0.5);
+  
+}
+ .a1 {
+   text-decoration: none;
+   color: black;
+ }  
+ .a1:hover {
+   text-decoration: underline;
+   color: black;
+ }
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .img1 {
+    width: 100%;
+  
+	
+  }
+}
 </style>
+
+
+
+<div class="row">
+
+  <div class="column2">
+  <a class="a1" href="Free Fire.html">
+    <img class="img1" src="https://play-lh.googleusercontent.com/PLUrweTw35jmEbl7NNACcXZQjlGuOVdiP-HWwpOk2GUUyHh8wWaU-antu-mt9QqTYMk=s180-rw" alt="Snow" style="width:100%;height: 100%;">
+    <p> Free Fire</p>
+	</a>
+  </div>
+  <div class="column2">
+  <a class="a1" href="COD.html">
+    <img class="img1" src="https://play-lh.googleusercontent.com/_vYBCFqUqqy7wXA_LxcnHtgy5VA2dHP4qv2x8PV9-uRzU84KWkn4qj9c7etTAX_6Dzo=s180-rw" alt="Forest" style="width:100%;height: 100%;">
+    <p>COD: M<p>
+	</a>
+  </div>
+  <div class="column2">
+    <a class="a1" href="Scarfall.html">
+    <img class="img1" src="https://play-lh.googleusercontent.com/K195SNO0366kefcE2ly8uDUdE3S0Be3SqSvoGmS26D_3gSKt7qB44sFj_PH648P3-2M=s180-rw" alt="Mountains" style="width:100%;height: 100%;">
+    <p> Scarfall</p>
+	</a>
+  </div>
+   
+  
+  
+  
+</div>
+
+</div>
+<style>
+.alert {
+  padding: 20px ;
+  background-image: linear-gradient(lightblue, white);
+  color: Black;
+  position: fixed;
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  border-radius: 0px;
+  width: 100%;
+  
+}
+
+
+
+.allow {
+  background: white;
+  border: none;
+  color: black;
+  padding: 12px 30px;
+  font-size: 14px;
+  float: left;
+  cursor: pointer;
+  transition: 0.1s;
+  outline: none;
+  }
+  
+.allow:hover {
+  background: #ddd;
+  opacity: 0.6;
+  color: black;
+  }
+.allow:active {
+  background: #ddd;
+  padding: 11px 29px;
+  opacity: 1;
+  }
+  
+.cancel {
+  background: white;
+  border: none;
+  color: black;
+  padding: 12px 30px;
+  font-size: 14px;
+  float: left;
+  cursor: pointer;
+  transition: 0.1s;
+  outline: none;
+  }
+  
+.cancel:hover {
+  background: red;
+  opacity: 1;
+  
+  color: white;
+  }
+.cancel:active {
+  background: red;
+  padding: 11px 29px;
+  opacity: 0.8;
+  }  
+  
+</style>
+<div class="alert">
+
+  
+    <strong>  Welcome!</strong> We will use cookies for certain work. Please allow.<br><hr>
+	<button class="allow"  id="yBtn">
+	Allow
+	</button>
+	<button class="cancel"  onclick="this.parentElement.style.display='none';">
+	Cancel
+	</button>
+
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Thanks! For Allowing.</p>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("yBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+  
 </div>
 
 
-
-
-
  
-
-
-
+</body>
 </html>
 
 
