@@ -4,8 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title> Call Of Duty</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  
+<link rel="icon" href="https://play-lh.googleusercontent.com/_vYBCFqUqqy7wXA_LxcnHtgy5VA2dHP4qv2x8PV9-uRzU84KWkn4qj9c7etTAX_6Dzo=s180-rw" type="image/png" sizes="16x16 32x32">
 <style>
 /* width */
 ::-webkit-scrollbar {
@@ -156,7 +155,7 @@ function topFunction() {
 <body style="font-family:Verdana;">
 
 <div style="background-color:#f1f1f1;padding:15px;">
-  <a href="https://smtechnlogy.github.io/apkgamestore/"><img class="img" src="1sm.png" width="5%"></a>
+  <a href="https://smtechnlogy.github.io/apkgamestore/"><img class="img" src="1sm.png" width="5%" title="SM Logo"></a>
   <h1 align="center">SM APK Store</h1>
   <h3 align="center">Best APK Games store for downloading BR Games </h3>
 </div>
@@ -221,19 +220,20 @@ body {
 
 
 <div class="topnav" id="myTopnav">
-  <a href="index.html" >Home</a>
-  <a target="_blank" href="https://smtechnlogy.github.io/shauryamishra/">Our Official</a>
-  <a href="About.html">About</a>
-  <a href="Contact.html">Contact</a>
-  <a href="All.html" class="active" >All Games</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <a href="index.html" ><i class="fa fa-home"></i> Home</a>
+  <a target="_blank" href="https://smtechnlogy.github.io/shauryamishra/"><i class="fa fa-link"></i> Our Official</a>
+  <a href="About.html"><i class="fa fa-info"></i> About</a>
+  <a href="Contact.html"><i class="fa fa-phone"></i> Contact</a>
+  <a href="All.html" class="active" ><i class="fa fa-gamepad"></i> All Games</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
     <i class="fa fa-bars"></i>
   </a>
+  <a href="go.html"><i class="fa fa-search"></i> Search</a>
 </div>
 
 
 <script>
-function myFunction() {
+function myFunction1() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
@@ -458,8 +458,25 @@ function showSlides() {
 
 .column {
   float: right;
-  width: 48%;
-  padding: 15px 30px;
+  width: 33.3%;
+  padding: 5px 5px;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
 }
 
@@ -491,32 +508,85 @@ function showSlides() {
 <br>
 <br>
 <h2 align="center"> Alternatives </h2>
+<style> 
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('https://www.w3schools.com//css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  outline: none;
+}
+
+input[type=text]:focus {
+  width: 80%;
+  border-radius: 15px;
+}
+</style>
+<script>
+function myFunction() {
+  var input = document.getElementById("Search");
+  var filter = input.value.toLowerCase();
+  var nodes = document.getElementsByClassName('target');
+
+  for (i = 0; i < nodes.length; i++) {
+    if (nodes[i].innerText.toLowerCase().includes(filter)) {
+      nodes[i].style.display = "block";
+    } else {
+      nodes[i].style.display = "none";
+    }
+  }
+}
+</script>
+<center>
+<form>
+  <input id="Search" onkeyup="myFunction()" type="text" name="search" placeholder="Search..">
+</form>
+</center>
+<hr>
 
 <div class="row">
+<div class="target">
   <div  class="column">
    <a class="a1" href="Free Fire.html">
     <img  class="img1" src="https://play-lh.googleusercontent.com/PLUrweTw35jmEbl7NNACcXZQjlGuOVdiP-HWwpOk2GUUyHh8wWaU-antu-mt9QqTYMk=s180-rw" alt="Snow" style="width:100%;border-radius: 5px;">
     <p> Garena Free Fire</p>
 	</a>
   </div>
+  </div>
+  <div class="target">
   <div class="column">
   <a  class="a1" href="Scarfall.html">
     <img  class="img1" src="https://play-lh.googleusercontent.com/K195SNO0366kefcE2ly8uDUdE3S0Be3SqSvoGmS26D_3gSKt7qB44sFj_PH648P3-2M=s180-rw" alt="Forest" style="width:100%">
     <p> Scarfall</p>
 	</a>
   </div>
+  </div>
+  <div class="target">
   <div class="column">
   <a  class="a1" href="">
     <img  class="img1" src="https://play-lh.googleusercontent.com/iZ7NP-56YenT2dpgKEAw3n7IKFyu-S_9Iu3ayo28XYTgZpFtxsK_HXltV36pysSJqq8=s180-rw" alt="Mountains" style="width:100%">
     <p> Granny, Chapter 2</p>
 	</a>
   </div>
+  </div>
 </div>
 
   </div>
   
 
-  <div class="right">
+  <div class="right" style="background-image: url('https://latestnews.fresherslive.com/images/articles/width-900/2020/10/06/how-to-get-free-cp-in-call-of-duty-how-to-play-call-of-duty-mobile-136035-5f7c6036e8a51-1601986614.jpg');
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat
+  background-opacity: 0.7;">
   
     <h1><i class="fa fa-info"></i> About</h1>
     <p>Created and published by <b>Activision Publishing Inc.</b></p>
@@ -529,7 +599,7 @@ function showSlides() {
     <p><b>Downloads</b>: 100 Millions +</p>
     <p><b>Rating</b>: 4.5+</p>
   </div>
-</div>
+
 
 
 
