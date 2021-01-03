@@ -135,7 +135,7 @@ function topFunction() {
   /* For tablets: */
   .main {
     width: 100%;
-    padding: 15px 50px;
+    padding: 15px 10px;
   }
   .right {
     width: 100%;
@@ -240,7 +240,7 @@ body {
   <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
     <i class="fa fa-bars"></i>
   </a>
-  
+   
 </div>
 
 
@@ -481,6 +481,13 @@ function showSlides() {
    text-decoration: underline;
    color: black;
  }
+ 
+ /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 50%;
+  }
+}
 </style>
 <br>
 <br>
