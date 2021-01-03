@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -236,7 +237,7 @@ body {
   <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
     <i class="fa fa-bars"></i>
   </a>
-
+  
 </div>
 
 
@@ -265,7 +266,6 @@ input[type=text] {
   background-position: 10px 12px;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
-  -webkit-transition: width 0.4s ease-in-out;
   transition: width 0.4s ease-in-out;
 }
 
@@ -292,7 +292,7 @@ function myFunction() {
 
 <center>
 <form>
-  <input id="Search" onkeyup="myFunction()" type="text" name="search" placeholder="Search..">
+  <input id="Search" onkeyup="myFunction()" type="text" name="search" placeholder="Search or type the game name">
 </form>
 </center>
 <hr>
@@ -324,17 +324,22 @@ function myFunction() {
    text-decoration: underline;
    color: black;
  }
-
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 50%;
+  }
+}
 </style>
 
 
 
 <div class="row">
-<div class="target">
+  <div class="target">
   <div class="column">
   <a class="a1" href="Free Fire.html">
-    <img class="img1" src="https://play-lh.googleusercontent.com/PLUrweTw35jmEbl7NNACcXZQjlGuOVdiP-HWwpOk2GUUyHh8wWaU-antu-mt9QqTYMk=s180-rw" alt="Snow" style="width:100%;height: 100%;">
-    <p> Free Fire</p>
+    <img class="img1" src="https://play-lh.googleusercontent.com/PLUrweTw35jmEbl7NNACcXZQjlGuOVdiP-HWwpOk2GUUyHh8wWaU-antu-mt9QqTYMk=s180-rw" alt="Forest" style="width:91%;height: 91%;">
+    <br> <font size="2">Free Fire
 	</a>
   </div>
   </div>
@@ -342,7 +347,7 @@ function myFunction() {
   <div class="column">
   <a class="a1" href="COD.html">
     <img class="img1" src="https://play-lh.googleusercontent.com/_vYBCFqUqqy7wXA_LxcnHtgy5VA2dHP4qv2x8PV9-uRzU84KWkn4qj9c7etTAX_6Dzo=s180-rw" alt="Forest" style="width:100%;height: 100%;">
-    <p>COD: M<p>
+     <font size="2">Call Of Duty
 	</a>
   </div>
   </div>
@@ -350,50 +355,50 @@ function myFunction() {
   <div class="column">
     <a class="a1" href="Scarfall.html">
     <img class="img1" src="https://play-lh.googleusercontent.com/K195SNO0366kefcE2ly8uDUdE3S0Be3SqSvoGmS26D_3gSKt7qB44sFj_PH648P3-2M=s180-rw" alt="Mountains" style="width:100%;height: 100%;">
-    <p> Scarfall</p>
+     <font size="2">Scarfall
 	</a>
   </div>
   </div>
   <div class="target">
   <div class="column">
     <img class="img1" src="https://play-lh.googleusercontent.com/yT_LBq_tyKeIDohKDsqN_Qt18jGIPUYIxY2C-1-E2YA9Qd60uZW08pua17qBmIiDPA=s180-rw" alt="Snow" style="width:100%;height: 100%;">
-    <p> Granny</p>
+     <font size="2">Granny
   </div>
   </div>
    <div class="target">
   <div class="column">
     <img class="img1" src="https://play-lh.googleusercontent.com/iZ7NP-56YenT2dpgKEAw3n7IKFyu-S_9Iu3ayo28XYTgZpFtxsK_HXltV36pysSJqq8=s180-rw" alt="Forest" style="width:100%;height: 100%;">
-    <p> Granny: Ch-2 </p>
+     <font size="2">Granny Chapter 2
      </div>
 	 </div>
 	  <div class="target">
   <div class="column">
     <img class="img1" src="https://play-lh.googleusercontent.com/gGcYfeKEHXYlDR3jvO4jABHZV88G5Xj6lqSrD3mBq2wvo6GfqmwrXvdt2q-cELcYe0o=s180-rw" alt="Mountains" style="width:100%;height: 100%;">
-    <p> Subway Surfer</p>
+     <font size="2">Subway Surfer
   </div>
   </div>
    <div class="target">
   <div class="column">
     <img class="img1" src="https://play-lh.googleusercontent.com/IkE22TRGILgMde_yWa6bGeptH5_VlV0wkfYASDYaYr8MzMWWmpzAbt_GbT6fRrDmJ00=s180-rw" alt="Mountains" style="width:100%;height: 100%;">
-    <p> FRAG Pro Shooter</p>
+     <font size="2">Frag Shooter
   </div>
   </div>
    <div class="target">
   <div class="column">
     <img class="img1" src="https://play-lh.googleusercontent.com/JRd05pyBH41qjgsJuWduRJpDeZG0Hnb0yjf2nWqO7VaGKL10-G5UIygxED-WNOc3pg=s180-rw" alt="Mountains" style="width:100%;height: 100%;">
-    <p> PUBG MOBILE - FROST FESTIVAL</p>
+     <font size="2">Pubg
   </div>
   </div>
    <div class="target">
   <div class="column">
     <img class="img1" src="https://play-lh.googleusercontent.com/FlyuHgp4YzC7WKt3BY6XeOdUk_3Z6d88cLfX4yN9ITF5Eem9m8PO7CI3MQ5X3fcR5iA=s180-rw" alt="Snow" style="width:100%;height: 100%;">
-    <p> PIXEL'S UNKNOWN BATTLE GROUND</p>
+     <font size="2">Pixel Battle
   </div>
   </div>
    <div class="target">
   <div class="column">
     <img class="img1" src="https://play-lh.googleusercontent.com/lHKqAt-PZSz-7ifRyOKr6D8Y2xal4rmhpA1_qKRUpCBLlV-QlZWLuOcG8Li9mcqJqA=s180-rw" alt="Forest" style="width:100%;height: 100%;">
-    <p> World War Heroes: WW2 FPS </p>
+    WW-II
      </div>
   </div>
   
