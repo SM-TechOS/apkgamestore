@@ -162,7 +162,7 @@ function topFunction() {
 
 <div style="background-color:#dddd;padding:15px;">
   
-  <a href="https://smtechnlogy.github.io/apkgamestore/"><img class="img" src="1sm.png" width="5%"></a>
+  <a href="https://smtechnlogy.github.io/apkgamestore/"><img class="img" src="1sm.png" width="5%" title="SM Logo"></a>
   <h1 align="center">SM APK Store</h1>
   <h3 align="center">Best APK Games store for downloading BR Games </h3>
   
@@ -228,19 +228,20 @@ body {
 
 
 <div class="topnav" id="myTopnav">
-  <a href="index.html" >Home</a>
-  <a target="_blank" href="https://smtechnlogy.github.io/shauryamishra/">Our Official</a>
-  <a href="About.html">About</a>
-  <a href="Contact.html">Contact</a>
-  <a href="All.html" class="active" >All Games</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <a href="index.html" ><i class="fa fa-home"></i> Home</a>
+  <a target="_blank" href="https://smtechnlogy.github.io/shauryamishra/"><i class="fa fa-link"></i> Our Official</a>
+  <a href="About.html"><i class="fa fa-info"></i> About</a>
+  <a href="Contact.html"><i class="fa fa-phone"></i> Contact</a>
+  <a href="All.html" class="active" ><i class="fa fa-gamepad"></i> All Games</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction1()">
     <i class="fa fa-bars"></i>
   </a>
+  <a href="go.html"><i class="fa fa-search"></i> Search</a> 
 </div>
 
 
 <script>
-function myFunction() {
+function myFunction1() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
@@ -249,7 +250,52 @@ function myFunction() {
   }
 }
 </script>
+
 <div class="main">
+<style> 
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('https://www.w3schools.com//css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 80%;
+  border-radius: 15px;
+}
+</style>
+<script>
+function myFunction() {
+  var input = document.getElementById("Search");
+  var filter = input.value.toLowerCase();
+  var nodes = document.getElementsByClassName('target');
+
+  for (i = 0; i < nodes.length; i++) {
+    if (nodes[i].innerText.toLowerCase().includes(filter)) {
+      nodes[i].style.display = "block";
+    } else {
+      nodes[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+<center>
+<form>
+  <input id="Search" onkeyup="myFunction()" type="text" name="search" placeholder="Search..">
+</form>
+</center>
+<hr>
 <style>
 * {
   box-sizing: border-box;
@@ -284,35 +330,71 @@ function myFunction() {
 
 
 <div class="row">
+<div class="target">
   <div class="column">
   <a class="a1" href="Free Fire.html">
     <img class="img1" src="https://play-lh.googleusercontent.com/PLUrweTw35jmEbl7NNACcXZQjlGuOVdiP-HWwpOk2GUUyHh8wWaU-antu-mt9QqTYMk=s180-rw" alt="Snow" style="width:100%;height: 100%;">
     <p> Free Fire</p>
 	</a>
   </div>
+  </div>
+   <div class="target">
   <div class="column">
   <a class="a1" href="COD.html">
     <img class="img1" src="https://play-lh.googleusercontent.com/_vYBCFqUqqy7wXA_LxcnHtgy5VA2dHP4qv2x8PV9-uRzU84KWkn4qj9c7etTAX_6Dzo=s180-rw" alt="Forest" style="width:100%;height: 100%;">
     <p>COD: M<p>
 	</a>
   </div>
+  </div>
+   <div class="target">
   <div class="column">
     <a class="a1" href="Scarfall.html">
     <img class="img1" src="https://play-lh.googleusercontent.com/K195SNO0366kefcE2ly8uDUdE3S0Be3SqSvoGmS26D_3gSKt7qB44sFj_PH648P3-2M=s180-rw" alt="Mountains" style="width:100%;height: 100%;">
     <p> Scarfall</p>
 	</a>
   </div>
+  </div>
+  <div class="target">
   <div class="column">
     <img class="img1" src="https://play-lh.googleusercontent.com/yT_LBq_tyKeIDohKDsqN_Qt18jGIPUYIxY2C-1-E2YA9Qd60uZW08pua17qBmIiDPA=s180-rw" alt="Snow" style="width:100%;height: 100%;">
     <p> Granny</p>
   </div>
+  </div>
+   <div class="target">
   <div class="column">
     <img class="img1" src="https://play-lh.googleusercontent.com/iZ7NP-56YenT2dpgKEAw3n7IKFyu-S_9Iu3ayo28XYTgZpFtxsK_HXltV36pysSJqq8=s180-rw" alt="Forest" style="width:100%;height: 100%;">
     <p> Granny: Ch-2 </p>
      </div>
+	 </div>
+	  <div class="target">
   <div class="column">
     <img class="img1" src="https://play-lh.googleusercontent.com/gGcYfeKEHXYlDR3jvO4jABHZV88G5Xj6lqSrD3mBq2wvo6GfqmwrXvdt2q-cELcYe0o=s180-rw" alt="Mountains" style="width:100%;height: 100%;">
     <p> Subway Surfer</p>
+  </div>
+  </div>
+   <div class="target">
+  <div class="column">
+    <img class="img1" src="https://play-lh.googleusercontent.com/IkE22TRGILgMde_yWa6bGeptH5_VlV0wkfYASDYaYr8MzMWWmpzAbt_GbT6fRrDmJ00=s180-rw" alt="Mountains" style="width:100%;height: 100%;">
+    <p> FRAG Pro Shooter</p>
+  </div>
+  </div>
+   <div class="target">
+  <div class="column">
+    <img class="img1" src="https://play-lh.googleusercontent.com/JRd05pyBH41qjgsJuWduRJpDeZG0Hnb0yjf2nWqO7VaGKL10-G5UIygxED-WNOc3pg=s180-rw" alt="Mountains" style="width:100%;height: 100%;">
+    <p> PUBG MOBILE - FROST FESTIVAL</p>
+  </div>
+  </div>
+   <div class="target">
+  <div class="column">
+    <img class="img1" src="https://play-lh.googleusercontent.com/FlyuHgp4YzC7WKt3BY6XeOdUk_3Z6d88cLfX4yN9ITF5Eem9m8PO7CI3MQ5X3fcR5iA=s180-rw" alt="Snow" style="width:100%;height: 100%;">
+    <p> PIXEL'S UNKNOWN BATTLE GROUND</p>
+  </div>
+  </div>
+   <div class="target">
+  <div class="column">
+    <img class="img1" src="https://play-lh.googleusercontent.com/lHKqAt-PZSz-7ifRyOKr6D8Y2xal4rmhpA1_qKRUpCBLlV-QlZWLuOcG8Li9mcqJqA=s180-rw" alt="Forest" style="width:100%;height: 100%;">
+    <p> World War Heroes: WW2 FPS </p>
+     </div>
   </div>
   
   
