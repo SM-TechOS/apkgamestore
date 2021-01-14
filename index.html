@@ -10,22 +10,61 @@
 <link rel="icon" href="1sm.png" type="image/png" sizes="16x16 32x32">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-/* Paste this css to your style sheet file or under head tag */
-/* This only works with JavaScript, 
-if it's not present, don't show loader */
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0; }
-.se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_3.gif) center no-repeat #fff;
+/* Center the loader */
+#loader2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+   border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #0029FF;
+  border-right: 16px solid #0082FF;
+  border-bottom: 16px solid #386189;
+  border-left: 16px solid #00FFB0;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 2s;
+  animation-name: animatebottom;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv3 {
+  display: none;
+  text-align: center;
 }
 </style>
- <div class="se-pre-con"></div>
+
+
 <style>
 ::-moz-selection { /* Code for Firefox */
   color: white;
@@ -195,6 +234,7 @@ function topFunction() {
   border-radius: 0px;
   filter: blur(1px);
   -webkit-filter: blur(1px);
+  align: center;
   
 }
 .img:hover {
@@ -240,10 +280,11 @@ function topFunction() {
 }
 </style>
 </head>
-<body style="font-family:Verdana;">
-
+<body  onload="myFunction44()" style="margin:0;" style="font-family:Verdana;">
+ <div id="loader2"></div>
+ <div style="display:none;" id="myDiv3" class="animate-bottom">
 <div style="background-color: #f1f1f1; padding:15px;">
-  <a href="https://smtechnlogy.github.io/apkgamestore/"><img class="img" src="1sm.png" width="5%" title="SM Logo"></a>
+  <a href="https://smtechnlogy.github.io/apkgamestore/"><h1 align="left"><img class="img" src="1sm.png" width="5%" title="SM Logo"></a></h1>
   <h1 align="center">SM APK Store</h1>
   <h3 align="center">Best APK Games store for downloading BR Games </h3>
   
@@ -712,7 +753,7 @@ Generally our aim was to make a website in which we will give free apk files whi
 <div class="alert">
 
   
-    <strong>  Welcome!</strong> We will use cookies for certain work. Please allow.<br><hr>
+    <p align="left"><strong>  Welcome!</strong> We will use cookies for certain work. Please allow.<br><hr></p>
 	<button class="allow"  id="yBtn">
 	Allow
 	</button>
@@ -786,17 +827,19 @@ s0.parentNode.insertBefore(s1,s0);
 </script>
 </div>
 <!--End of Tawk.to Script-->
-
+</div>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 <script>
-//paste this code under the head tag or in a separate js file.
-	// Wait for window load
-	$(window).load(function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});
+var myVar;
+
+function myFunction44() {
+  myVar = setTimeout(showPage, 1000);
+}
+
+function showPage() {
+  document.getElementById("loader2").style.display = "none";
+  document.getElementById("myDiv3").style.display = "block";
+}
 </script>
 
 </html>
